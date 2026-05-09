@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookBerry UZ — Мода, стиль и шоппинг в одном приложении</title>
+    <meta name="description" content="LookBerry — социальная сеть моды и шоппинга в Узбекистане. Открывайте тренды, покупайте уникальные вещи от микро-брендов, участвуйте в Fashion Battles и становитесь Berry!">
+    <meta name="keywords" content="LookBerry, мода Узбекистан, шоппинг, fashion, стиль, микро-бренды, Ташкент, одежда">
+    <meta property="og:title" content="LookBerry UZ — Мода, стиль и шоппинг">
+    <meta property="og:description" content="Социальная сеть моды. Покупай, делись стилем, побеждай в Fashion Battles!">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫐</text></svg>">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">LookBerry</div>
+            <div class="preloader-bar"><div class="preloader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">🫐</span>
+                <span class="logo-text">Look<span class="logo-accent">Berry</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#features">Возможности</a></li>
+                <li><a href="#how-it-works">Как это работает</a></li>
+                <li><a href="#berries">Berries</a></li>
+                <li><a href="#brands">Бренды</a></li>
+                <li><a href="#download">Скачать</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="https://www.instagram.com/lookberry_uz" target="_blank" class="nav-cta">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    Instagram
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Теперь в Узбекистане
+            </div>
+            <h1 class="hero-title">
+                <span class="line-1">Мода встречает</span>
+                <span class="line-2"><em>социальную</em> сеть</span>
+            </h1>
+            <p class="hero-subtitle">Покупай уникальные вещи от микро-брендов, делись своим стилем, участвуй в Fashion Battles и становись амбассадором любимых брендов.</p>
+            <div class="hero-actions">
+                <a href="#download" class="btn btn-primary">
+                    <span>Скачать приложение</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="#about" class="btn btn-ghost">Узнать больше</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Пользователей</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Брендов</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Образов</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <div class="screen-header">
+                            <span class="screen-logo">🫐 LookBerry</span>
+                            <span class="screen-icon">♡</span>
+                        </div>
+                        <div class="screen-card">
+                            <div class="card-img"></div>
+                            <div class="card-info">
+                                <span class="card-tag">Fashion Battle</span>
+                                <span class="card-name">@style_queen</span>
+                                <div class="card-actions">
+                                    <span class="card-btn hot">🔥 HotLike</span>
+                                    <span class="card-btn">❤️ 2.4K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen-nav">
+                            <span>🏠</span>
+                            <span>🔍</span>
+                            <span class="active">⚡</span>
+                            <span>👤</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">О платформе</span>
+                <h2 class="section-title">Что такое <span class="highlight">LookBerry</span>?</h2>
+                <p class="section-desc">LookBerry — это место, где мода и социальное взаимодействие объединяются. Вы открываете для себя продукты, публикуете образы и взаимодействуете с другими через стиль.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    </div>
+                    <h3>Модный магазин</h3>
+                    <p>Откройте для себя эксклюзивные вещи от лучших микро-брендов. Уникальные образы, которые помогут вам выделиться.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Berries Club</h3>
+                    <p>Приватное пространство, где сообщество выбирает амбассадоров для продуктов через лайки и Fashion Battles.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>Стань Berry</h3>
+                    <p>Побеждайте в fashion-батлах, становитесь амбассадорами брендов и зарабатывайте на продажах.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Возможности</span>
+                <h2 class="section-title">Превратите стиль <br>в <span class="highlight">возможности</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-large">
+                    <div class="feature-content">
+                        <div class="feature-number">01</div>
+                        <h3>Fashion Battles</h3>
+                        <p>Два пользователя публикуют образы с одним продуктом — сообщество голосует. Победитель становится Berry — официальным амбассадором товара.</p>
+                    </div>
+                    <div class="feature-visual battle-visual">
+                        <div class="battle-card left">
+                            <div class="battle-avatar"></div>
+                            <span>@fashionista</span>
+                            <div class="battle-votes">1.2K 🔥</div>
+                        </div>
+                        <div class="battle-vs">VS</div>
+                        <div class="battle-card right">
+                            <div class="battle-avatar"></div>
+                            <span>@style_pro</span>
+                            <div class="battle-votes">980 ❤️</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <div class="feature-number">02</div>
+                        <h3>Получайте видимость</h3>
+                        <p>Развивайте своё присутствие через реальное взаимодействие с сообществом.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <div class="feature-number">03</div>
+                        <h3>Сотрудничайте с брендами</h3>
+                        <p>Общайтесь с другими, участвуйте в кампаниях и зарабатывайте комиссионные.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <div class="feature-number">04</div>
+                        <h3>Микро-бренды</h3>
+                        <p>Эксклюзивные коллекции в ограниченном количестве. Носите то, чего нет у других.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <div class="feature-number">05</div>
+                        <h3>Зарабатывайте</h3>
+                        <p>Berries получают комиссию от онлайн и оффлайн продаж товаров, которые они представляют.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Как это работает</span>
+                <h2 class="section-title">Три шага к <span class="highlight">успеху</span></h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <div class="step-number">1</div>
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    </div>
+                    <h3>Публикуйте</h3>
+                    <p>Делитесь своими образами, отмечайте продукты и показывайте свой уникальный стиль миру.</p>
+                </div>
+                <div class="step-arrow">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <div class="step-number">2</div>
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h3>Будьте замечены</h3>
+                    <p>Получайте реакции, HotLikes и видимость от сообщества модных энтузиастов.</p>
+                </div>
+                <div class="step-arrow">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <div class="step-number">3</div>
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Открывайте доступ</h3>
+                    <p>Получайте доступ к батлам, сотрудничеству с брендами и реальному влиянию в мире моды.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Berries Section -->
+    <section class="berries" id="berries">
+        <div class="container">
+            <div class="berries-wrapper">
+                <div class="berries-content">
+                    <span class="section-tag">Berries Club</span>
+                    <h2 class="section-title">Кто такие <span class="highlight">Berries</span>?</h2>
+                    <p>Berries — это новое лицо моды. Модели, выбранные сообществом LookBerry через Berries Club — людьми, а не агентствами.</p>
+                    <ul class="berries-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Выбраны сообществом
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Реальный стиль, реальное влияние
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Комиссия от продаж
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Профессиональные фотосессии
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Эксклюзивные скидки для подписчиков
+                        </li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary">Стать Berry</a>
+                </div>
+                <div class="berries-visual">
+                    <div class="berry-profile">
+                        <div class="berry-avatar"></div>
+                        <div class="berry-info">
+                            <span class="berry-name">@berry_queen</span>
+                            <span class="berry-badge">🫐 Verified Berry</span>
+                        </div>
+                        <div class="berry-stats-mini">
+                            <span>12.5K подписчиков</span>
+                            <span>89 образов</span>
+                            <span>34 батла выиграно</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands" id="brands">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Партнёры</span>
+                <h2 class="section-title">Курированные <span class="highlight">бренды</span></h2>
+                <p class="section-desc">LookBerry работает с ограниченным кругом нишевых модных брендов. Каждый бренд получает значимую видимость и пространство для роста.</p>
+            </div>
+            <div class="brands-marquee">
+                <div class="brands-track">
+                    <div class="brand-item">STASH</div>
+                    <div class="brand-item">Meggy Beaufort</div>
+                    <div class="brand-item">MYxMY</div>
+                    <div class="brand-item">Swim by Di</div>
+                    <div class="brand-item">Lune</div>
+                    <div class="brand-item">Roar Cruise</div>
+                    <div class="brand-item">Jamemme</div>
+                    <div class="brand-item">Samadhi</div>
+                    <div class="brand-item">STASH</div>
+                    <div class="brand-item">Meggy Beaufort</div>
+                    <div class="brand-item">MYxMY</div>
+                    <div class="brand-item">Swim by Di</div>
+                    <div class="brand-item">Lune</div>
+                    <div class="brand-item">Roar Cruise</div>
+                    <div class="brand-item">Jamemme</div>
+                    <div class="brand-item">Samadhi</div>
+                </div>
+            </div>
+            <div class="brands-cta">
+                <h3>Вы — бренд?</h3>
+                <p>Присоединяйтесь к LookBerry и откройте новые возможности для роста. Наша платформа помогает модным брендам находить новую аудиторию.</p>
+                <a href="https://www.instagram.com/lookberry_uz" target="_blank" class="btn btn-outline">Стать партнёром</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-wrapper">
+                <div class="download-content">
+                    <h2 class="section-title">Скачай <span class="highlight">LookBerry</span> <br>прямо сейчас</h2>
+                    <p>Присоединяйся к тысячам модных людей в Узбекистане. Публикуй образы, участвуй в батлах и находи свой стиль.</p>
+                    <div class="download-buttons">
+                        <a href="#" class="store-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            <div class="store-info">
+                                <span class="store-small">Загрузить в</span>
+                                <span class="store-name">App Store</span>
+                            </div>
+                        </a>
+                        <a href="#" class="store-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.635z"/></svg>
+                            <div class="store-info">
+                                <span class="store-small">Доступно в</span>
+                                <span class="store-name">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="download-visual">
+                    <div class="download-phone">
+                        <div class="phone-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section" id="instagram-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Мы в соцсетях</span>
+                <h2 class="section-title">Подписывайтесь на <span class="highlight">@lookberry_uz</span></h2>
+                <p class="section-desc">Следите за последними трендами, новостями и вдохновением в нашем Instagram.</p>
+            </div>
+            <div class="instagram-cta">
+                <a href="https://www.instagram.com/lookberry_uz" target="_blank" class="instagram-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <span>Перейти в Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">
+                        <span class="logo-icon">🫐</span>
+                        <span class="logo-text">Look<span class="logo-accent">Berry</span></span>
+                    </a>
+                    <p>Мода встречает социальную сеть. Покупай, делись стилем, побеждай.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/lookberry_uz" target="_blank" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Платформа</h4>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#features">Возможности</a></li>
+                        <li><a href="#berries">Berries Club</a></li>
+                        <li><a href="#brands">Бренды</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ресурсы</h4>
+                    <ul>
+                        <li><a href="#how-it-works">Как это работает</a></li>
+                        <li><a href="#download">Скачать</a></li>
+                        <li><a href="https://www.instagram.com/lookberry_uz" target="_blank">Instagram</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/lookberry_uz" target="_blank">@lookberry_uz</a></li>
+                        <li><a href="#">Ташкент, Узбекистан</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LookBerry UZ. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
