@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remont Fergana — Фарғонада квартира ва уй таъмирлаш хизмати</title>
+    <title>Remont Fergana — Фарғонада сифатли таъмирлаш хизмати</title>
     <meta name="description" content="Фарғонада квартира, уй, коттедж ва офис таъмирлаш. Сифатли ремонт, сантехника, электрика, иситиш тизимлари. +998 91 650-23-15">
     <meta name="keywords" content="ремонт Фарғона, таъмирлаш, квартира ремонт, уй таъмирлаш, сантехника, электрика, Fergana remont">
     <meta property="og:title" content="Remont Fergana — Сифатли таъмирлаш хизмати">
@@ -11,21 +11,15 @@
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
 </head>
 <body>
     <!-- Preloader -->
     <div class="preloader" id="preloader">
         <div class="preloader-content">
-            <div class="preloader-icon">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-                    <line x1="12" y1="22.08" x2="12" y2="12"/>
-                </svg>
-            </div>
+            <div class="preloader-spinner"></div>
             <div class="preloader-text">REMONT FERGANA</div>
         </div>
     </div>
@@ -34,15 +28,10 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <span class="logo-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                        <polyline points="9 22 9 12 15 12 15 22"/>
-                    </svg>
-                </span>
+                <div class="logo-mark">RF</div>
                 <div class="logo-text-wrap">
-                    <span class="logo-text">REMONT</span>
-                    <span class="logo-sub">FERGANA</span>
+                    <span class="logo-text">Remont</span>
+                    <span class="logo-sub">Fergana</span>
                 </div>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -51,6 +40,7 @@
                 <li><a href="#portfolio">Ишларимиз</a></li>
                 <li><a href="#process">Жараён</a></li>
                 <li><a href="#reviews">Фикрлар</a></li>
+                <li><a href="#instagram">Instagram</a></li>
                 <li><a href="#contact">Алоқа</a></li>
             </ul>
             <a href="tel:+998916502315" class="nav-cta">
@@ -68,100 +58,99 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-bg">
-            <div class="hero-gradient"></div>
-            <div class="hero-pattern"></div>
+            <img src="img/hero-renovation.jpg" alt="Remont Fergana" class="hero-bg-img">
+            <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
             <div class="hero-badge">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                 Фарғонада №1 таъмирлаш хизмати
             </div>
             <h1 class="hero-title">
-                <span class="hero-title-line">Уйингизни</span>
-                <span class="hero-title-line accent">орзуларингиздаги</span>
-                <span class="hero-title-line">жойга айлантирамиз</span>
+                <span>Уйингизни</span>
+                <span class="accent">орзуингиздаги</span>
+                <span>жойга айлантирамиз</span>
             </h1>
-            <p class="hero-subtitle">Квартира, уй, коттедж ва офисларни сифатли таъмирлаш. 20 йилдан ортиқ тажриба. Кафолат берамиз.</p>
+            <p class="hero-subtitle">Квартира, уй, коттедж ва офисларни замонавий услубда таъмирлаймиз. Евростандарт сифатида. Кафолат берамиз.</p>
             <div class="hero-actions">
                 <a href="tel:+998916502315" class="btn btn-primary">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    Қўнғироқ қилинг
+                    +998 91 650-23-15
                 </a>
-                <a href="#services" class="btn btn-outline">Хизматларимиз</a>
+                <a href="#services" class="btn btn-glass">Хизматларимиз</a>
+                <a href="https://www.instagram.com/remont__fergana/" target="_blank" class="btn btn-glass">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    Instagram
+                </a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number" data-count="20">20+</span>
+                    <span class="stat-number">20+</span>
                     <span class="stat-label">Йил тажриба</span>
                 </div>
+                <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-count="1500">1500+</span>
-                    <span class="stat-label">Бажарилган лойиҳалар</span>
+                    <span class="stat-number">1500+</span>
+                    <span class="stat-label">Лойиҳалар</span>
                 </div>
+                <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-count="100">100%</span>
-                    <span class="stat-label">Мижозлар мамнун</span>
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Кафолат</span>
                 </div>
             </div>
-        </div>
-        <div class="hero-scroll">
-            <span>Pastga</span>
-            <div class="scroll-line"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section class="section about" id="about">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Биз ҳақимизда</span>
-                <h2 class="section-title">Сифат ва <span class="accent">ишончнинг</span> манзили</h2>
-            </div>
             <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img main-img">
+                        <img src="img/modern-interior.jpg" alt="Замонавий интерьер" loading="lazy">
+                    </div>
+                    <div class="about-img secondary-img">
+                        <img src="img/renovation-tools.jpg" alt="Таъмирлаш асбоблари" loading="lazy">
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="exp-number">20+</span>
+                        <span class="exp-text">Йил тажриба</span>
+                    </div>
+                </div>
                 <div class="about-text">
-                    <p class="about-lead">Биз — Фарғона шаҳридаги етакчи таъмирлаш ва қурилиш хизмати. Уйингизни янгилаш, чиройли ва қулай қилиш бизнинг асосий мақсадимиз.</p>
-                    <p>20 йилдан ортиқ тажрибага эга усталаримиз квартира, уй, коттедж ва офислар ремонтини юқори сифатда бажаради. Барча ишларга кафолат берамиз.</p>
+                    <span class="section-tag">Биз ҳақимизда</span>
+                    <h2 class="section-title">Фарғонада <span class="accent">ишончли</span> таъмирлаш хизмати</h2>
+                    <p class="about-lead">Биз — Фарғона шаҳридаги етакчи таъмирлаш ва қурилиш компаниясимиз. Уйингизни замонавий, чиройли ва қулай қилиш бизнинг мақсадимиз.</p>
+                    <p>20 йилдан ортиқ тажрибага эга профессионал усталаримиз квартира, уй, коттедж ва офислар ремонтини евростандарт сифатида бажаради.</p>
                     <div class="about-features">
                         <div class="about-feature">
                             <div class="feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                             </div>
                             <div>
-                                <h4>Кафолат берамиз</h4>
-                                <p>Барча ишларга 10 йилгача кафолат</p>
+                                <h4>10 йилгача кафолат</h4>
+                                <p>Барча ишларга ёзма кафолат берамиз</p>
                             </div>
                         </div>
                         <div class="about-feature">
                             <div class="feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                             </div>
                             <div>
                                 <h4>Аниқ муддатлар</h4>
-                                <p>Ишни ўз вақтида тугатамиз</p>
+                                <p>Шартномада белгиланган вақтда тугатамиз</p>
                             </div>
                         </div>
                         <div class="about-feature">
                             <div class="feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                             </div>
                             <div>
-                                <h4>Бепул маслаҳат</h4>
-                                <p>Қўнғироқ қилинг — маслаҳат берамиз</p>
+                                <h4>Сифатли материаллар</h4>
+                                <p>Фақат текширилган, сифатли материаллар</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="about-img-wrapper">
-                        <div class="about-img-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                                <polyline points="9 22 9 12 15 12 15 22"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="about-quote">
-                        <blockquote>«Сифатли ремонт — бу уйдаги қувонч ва бахт.»</blockquote>
                     </div>
                 </div>
             </div>
@@ -171,185 +160,178 @@
     <!-- Services Section -->
     <section class="section services" id="services">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header center">
                 <span class="section-tag">Хизматлар</span>
                 <h2 class="section-title">Барча турдаги <span class="accent">таъмирлаш</span> ишлари</h2>
+                <p class="section-desc">Биз квартира, уй ва офисларнинг тўлиқ таъмирлашини бажарамиз — кичик косметик ишлардан тортиб тўлиқ капитал ремонтгача.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card" data-aos="fade-up">
-                    <div class="service-number">01</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/living-room.jpg" alt="Квартира ремонти" loading="lazy">
                     </div>
-                    <h3>Квартира ва уй ремонти</h3>
-                    <p>Квартира, уй, коттедж ва офисларни тўлиқ таъмирлаш. Евростандарт сифатида.</p>
-                    <ul class="service-list">
-                        <li>Косметик ремонт</li>
-                        <li>Капитал ремонт</li>
-                        <li>Дизайнерлик ремонт</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">01</div>
+                        <h3>Квартира ва уй ремонти</h3>
+                        <p>Косметик, капитал ва дизайнерлик ремонт. Евростандарт сифатида.</p>
+                        <ul class="service-list">
+                            <li>Косметик ремонт</li>
+                            <li>Капитал ремонт</li>
+                            <li>Дизайнерлик лойиҳа</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-number">02</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/bathroom-tile.jpg" alt="Кафель ишлари" loading="lazy">
                     </div>
-                    <h3>Кафель ва плитка</h3>
-                    <p>Девор ва полга кафель ўрнатиш. Ваннахона ва ошхона учун махсус ишлар.</p>
-                    <ul class="service-list">
-                        <li>Девор кафели</li>
-                        <li>Пол плиткаси</li>
-                        <li>Мозаика ишлари</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">02</div>
+                        <h3>Кафель ва плитка</h3>
+                        <p>Девор ва полга кафель ўрнатиш. Ваннахона ва ошхона учун.</p>
+                        <ul class="service-list">
+                            <li>Девор кафели</li>
+                            <li>Пол плиткаси</li>
+                            <li>Мозаика ишлари</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-number">03</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/plumbing-work.jpg" alt="Сантехника" loading="lazy">
                     </div>
-                    <h3>Сантехника</h3>
-                    <p>Пластик ва канализация қувурлари монтажи. Сантехник жиҳозлар ўрнатиш.</p>
-                    <ul class="service-list">
-                        <li>Қувур монтажи</li>
-                        <li>Унитоз, ваннa ўрнатиш</li>
-                        <li>Канализация тизими</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">03</div>
+                        <h3>Сантехника</h3>
+                        <p>Қувурлар монтажи, канализация, сантехник жиҳозлар ўрнатиш.</p>
+                        <ul class="service-list">
+                            <li>Қувур монтажи</li>
+                            <li>Унитоз, ванна ўрнатиш</li>
+                            <li>Канализация тизими</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-number">04</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/electrical-work.jpg" alt="Электрика" loading="lazy">
                     </div>
-                    <h3>Электрика</h3>
-                    <p>Электр тармоқлари монтажи. Розетка, шалтер, чироқлар ўрнатиш.</p>
-                    <ul class="service-list">
-                        <li>Электр симлари тортиш</li>
-                        <li>Розетка ва шалтер</li>
-                        <li>Ёритиш тизимлари</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">04</div>
+                        <h3>Электрика</h3>
+                        <p>Электр тармоқлари, розетка, шалтер, чироқлар ўрнатиш.</p>
+                        <ul class="service-list">
+                            <li>Электр симлари</li>
+                            <li>Розетка ва шалтер</li>
+                            <li>Ёритиш тизимлари</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-number">05</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/painting-wall.jpg" alt="Маляр ишлари" loading="lazy">
                     </div>
-                    <h3>Маляр ва бўяш ишлари</h3>
-                    <p>Девор ва шифтларни бўяш, шпаклёвка, обой ёпиштириш.</p>
-                    <ul class="service-list">
-                        <li>Шпаклёвка ва шкуровка</li>
-                        <li>Бўяш ишлари</li>
-                        <li>Обой ёпиштириш</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">05</div>
+                        <h3>Маляр ва бўяш</h3>
+                        <p>Шпаклёвка, бўяш, обой ёпиштириш, декоратив қоплама.</p>
+                        <ul class="service-list">
+                            <li>Шпаклёвка ишлари</li>
+                            <li>Бўяш ва обой</li>
+                            <li>Декоратив штукатурка</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-number">06</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/heating-system.jpg" alt="Иситиш тизими" loading="lazy">
                     </div>
-                    <h3>Иситиш тизимлари</h3>
-                    <p>Иситиш тизимлари, иссиқ полар монтажи. Котёллар ўрнатиш ва таъмирлаш.</p>
-                    <ul class="service-list">
-                        <li>Иситиш радиаторлари</li>
-                        <li>Иссиқ пол тизими</li>
-                        <li>Котёл ўрнатиш</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">06</div>
+                        <h3>Иситиш тизимлари</h3>
+                        <p>Иситиш радиаторлари, иссиқ полар, котёллар ўрнатиш.</p>
+                        <ul class="service-list">
+                            <li>Иссиқ пол монтажи</li>
+                            <li>Радиатор ўрнатиш</li>
+                            <li>Котёл таъмирлаш</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="service-number">07</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/kitchen-modern.jpg" alt="Гипсокартон" loading="lazy">
                     </div>
-                    <h3>Гипсокартон ва пластик</h3>
-                    <p>Гипсокартон конструкциялар, натяжной потолоклар, пластик панеллар.</p>
-                    <ul class="service-list">
-                        <li>Гипсокартон шифт</li>
-                        <li>Арка ва ниша</li>
-                        <li>Пластик панеллар</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">07</div>
+                        <h3>Гипсокартон ва пластик</h3>
+                        <p>Гипсокартон шифт, арка, ниша, пластик панеллар.</p>
+                        <ul class="service-list">
+                            <li>Гипсокартон конструкция</li>
+                            <li>Натяжной потолок</li>
+                            <li>Пластик панеллар</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
-                    <div class="service-number">08</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/office-renovation.jpg" alt="Маиший техника" loading="lazy">
                     </div>
-                    <h3>Маиший техника</h3>
-                    <p>Кондиционер, иситгич (Аристон), кир ювиш машинаси, газ плита ўрнатиш ва таъмирлаш.</p>
-                    <ul class="service-list">
-                        <li>Кондиционер монтажи</li>
-                        <li>Аристон ўрнатиш</li>
-                        <li>Газ плита таъмирлаш</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">08</div>
+                        <h3>Маиший техника</h3>
+                        <p>Кондиционер, Аристон, кир ювиш машинаси, газ плита ўрнатиш.</p>
+                        <ul class="service-list">
+                            <li>Кондиционер монтажи</li>
+                            <li>Аристон ўрнатиш</li>
+                            <li>Газ плита таъмирлаш</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio / Gallery Section -->
     <section class="section portfolio" id="portfolio">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header center">
                 <span class="section-tag">Портфолио</span>
                 <h2 class="section-title">Бизнинг <span class="accent">ишларимиз</span></h2>
+                <p class="section-desc">Ҳар бир лойиҳамизга алоҳида эътибор берамиз. Мана, баъзи натижалар.</p>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item large">
-                    <div class="portfolio-img-placeholder">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                        <span>Замонавий квартира ремонти</span>
-                    </div>
+                <div class="portfolio-item wide">
+                    <img src="img/modern-interior.jpg" alt="Замонавий интерьер" loading="lazy">
                     <div class="portfolio-overlay">
-                        <h4>Замонавий квартира ремонти</h4>
-                        <p>Тўлиқ капитал ремонт</p>
+                        <span class="portfolio-tag">Капитал ремонт</span>
+                        <h4>Замонавий квартира</h4>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-img-placeholder">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                        <span>Ваннахона ремонти</span>
-                    </div>
+                    <img src="img/bathroom-tile.jpg" alt="Ваннахона" loading="lazy">
                     <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Кафель</span>
                         <h4>Ваннахона ремонти</h4>
-                        <p>Кафель ва сантехника</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-img-placeholder">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                        <span>Ошхона дизайни</span>
-                    </div>
+                    <img src="img/kitchen-modern.jpg" alt="Ошхона" loading="lazy">
                     <div class="portfolio-overlay">
-                        <h4>Ошхона дизайни</h4>
-                        <p>Замонавий ошхона</p>
+                        <span class="portfolio-tag">Дизайн</span>
+                        <h4>Замонавий ошхона</h4>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-img-placeholder">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                        <span>Меҳмонхона ремонти</span>
-                    </div>
+                    <img src="img/living-room.jpg" alt="Меҳмонхона" loading="lazy">
                     <div class="portfolio-overlay">
-                        <h4>Меҳмонхона ремонти</h4>
-                        <p>Дизайнерлик ремонт</p>
+                        <span class="portfolio-tag">Ремонт</span>
+                        <h4>Меҳмонхона дизайни</h4>
                     </div>
                 </div>
-                <div class="portfolio-item large">
-                    <div class="portfolio-img-placeholder">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                        <span>Офис ремонти</span>
-                    </div>
+                <div class="portfolio-item wide">
+                    <img src="img/office-renovation.jpg" alt="Офис" loading="lazy">
                     <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Тижорат</span>
                         <h4>Офис ремонти</h4>
-                        <p>Тижорат объектлари</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-img-placeholder">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                        <span>Иситиш тизими монтажи</span>
-                    </div>
-                    <div class="portfolio-overlay">
-                        <h4>Иситиш тизими монтажи</h4>
-                        <p>Иссиқ пол ва радиаторлар</p>
                     </div>
                 </div>
             </div>
@@ -359,44 +341,59 @@
     <!-- Process Section -->
     <section class="section process" id="process">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header center">
                 <span class="section-tag">Жараён</span>
-                <h2 class="section-title">Қандай <span class="accent">ишлаймиз</span></h2>
+                <h2 class="section-title">Қандай <span class="accent">ишлаймиз?</span></h2>
             </div>
-            <div class="process-grid">
+            <div class="process-timeline">
                 <div class="process-step">
-                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
                     <div class="step-content">
-                        <h3>Қўнғироқ</h3>
-                        <p>Бизга қўнғироқ қилинг ёки Instagram орқали ёзинг. Бепул маслаҳат берамиз.</p>
+                        <span class="step-num">01</span>
+                        <h3>Қўнғироқ қилинг</h3>
+                        <p>Бизга қўнғироқ ёки Instagram орқали ёзинг. Бепул маслаҳат берамиз.</p>
                     </div>
                 </div>
                 <div class="process-step">
-                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
                     <div class="step-content">
+                        <span class="step-num">02</span>
                         <h3>Баҳолаш</h3>
-                        <p>Устамиз келиб ишни кўради, ўлчайди ва аниқ нарх айтади.</p>
+                        <p>Устамиз келиб кўради, ўлчайди ва аниқ нарх айтади.</p>
                     </div>
                 </div>
                 <div class="process-step">
-                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
                     <div class="step-content">
+                        <span class="step-num">03</span>
                         <h3>Шартнома</h3>
-                        <p>Нарх, муддат ва шартлар шартномада қайд этилади.</p>
+                        <p>Нарх, муддат ва шартлар ёзма шартномада қайд этилади.</p>
                     </div>
                 </div>
                 <div class="process-step">
-                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
                     <div class="step-content">
-                        <h3>Иш бошлаш</h3>
-                        <p>Тажрибали усталаримиз ишни бошлайди. Ҳар куни ҳисобот берамиз.</p>
+                        <span class="step-num">04</span>
+                        <h3>Иш бошлаймиз</h3>
+                        <p>Тажрибали усталаримиз ишни бошлайди. Ҳар куни ҳисобот.</p>
                     </div>
                 </div>
                 <div class="process-step">
-                    <div class="step-number">05</div>
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
                     <div class="step-content">
+                        <span class="step-num">05</span>
                         <h3>Топшириш</h3>
-                        <p>Тайёр ишни текширасиз. Мамнун бўлсангиз — қабул қиласиз. Кафолат берамиз.</p>
+                        <p>Тайёр ишни кўрасиз ва қабул қиласиз. Кафолат берамиз!</p>
                     </div>
                 </div>
             </div>
@@ -406,19 +403,13 @@
     <!-- Reviews Section -->
     <section class="section reviews" id="reviews">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header center">
                 <span class="section-tag">Фикрлар</span>
                 <h2 class="section-title">Мижозлар <span class="accent">нима дейди</span></h2>
             </div>
             <div class="reviews-grid">
                 <div class="review-card">
-                    <div class="review-stars">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
+                    <div class="review-stars">★★★★★</div>
                     <p class="review-text">«Жуда яхши ишлашди! Квартирамизни тўлиқ янгиладилар. Сифати зўр, нархи ҳам ўринли. Тавсия қиламан!»</p>
                     <div class="review-author">
                         <div class="review-avatar">А</div>
@@ -429,13 +420,7 @@
                     </div>
                 </div>
                 <div class="review-card">
-                    <div class="review-stars">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
+                    <div class="review-stars">★★★★★</div>
                     <p class="review-text">«Ваннахонамизни мўъжизакор қилишди. Кафель ишлари жуда тоза ва чиройли чиқди. Раҳмат катта!»</p>
                     <div class="review-author">
                         <div class="review-avatar">Д</div>
@@ -446,20 +431,84 @@
                     </div>
                 </div>
                 <div class="review-card">
-                    <div class="review-stars">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="review-text">«Офисимизнинг ремонтини жуда тез ва сифатли қилишди. Ходимлар жуда одобли ва профессионал. Яна мурожаат қиламиз.»</p>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Офисимизнинг ремонтини тез ва сифатли қилишди. Ходимлар жуда одобли ва профессионал. Яна мурожаат қиламиз.»</p>
                     <div class="review-author">
                         <div class="review-avatar">Б</div>
                         <div>
                             <strong>Бобур Т.</strong>
                             <span>Офис ремонти</span>
                         </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Иситиш тизимини мукаммал ўрнатишди. Қиш пайтида уй жуда иссиқ бўлди. Усталар ўз ишини яхши билишади.»</p>
+                    <div class="review-author">
+                        <div class="review-avatar">Ш</div>
+                        <div>
+                            <strong>Шерзод Р.</strong>
+                            <span>Иситиш тизими</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="section instagram-section" id="instagram">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Instagram</span>
+                <h2 class="section-title">Бизни <span class="accent">Instagramда</span> кузатинг</h2>
+                <p class="section-desc">Энг сўнги ишларимиз, жараёнлар ва натижаларни Instagram саҳифамизда кўринг.</p>
+            </div>
+            <div class="instagram-cta">
+                <a href="https://www.instagram.com/remont__fergana/" target="_blank" class="instagram-follow-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <div>
+                        <strong>@remont__fergana</strong>
+                        <span>Кузатиш учун босинг</span>
+                    </div>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+            </div>
+            <div class="instagram-grid">
+                <div class="insta-item">
+                    <img src="img/modern-interior.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                </div>
+                <div class="insta-item">
+                    <img src="img/bathroom-tile.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                </div>
+                <div class="insta-item">
+                    <img src="img/kitchen-modern.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                </div>
+                <div class="insta-item">
+                    <img src="img/painting-wall.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                </div>
+                <div class="insta-item">
+                    <img src="img/living-room.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                </div>
+                <div class="insta-item">
+                    <img src="img/heating-system.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
                     </div>
                 </div>
             </div>
@@ -470,15 +519,17 @@
     <section class="section cta-section">
         <div class="container">
             <div class="cta-card">
+                <img src="img/apartment-before.jpg" alt="Ремонт" class="cta-bg-img">
+                <div class="cta-overlay"></div>
                 <div class="cta-content">
                     <h2>Бепул маслаҳат олинг!</h2>
-                    <p>Ҳозироқ қўнғироқ қилинг ёки Instagram орқали ёзинг. Устамиз бепул келиб баҳолайди.</p>
+                    <p>Ҳозироқ қўнғироқ қилинг — устамиз бепул келиб баҳолайди</p>
                     <div class="cta-actions">
                         <a href="tel:+998916502315" class="btn btn-primary btn-lg">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             +998 91 650-23-15
                         </a>
-                        <a href="https://www.instagram.com/remont__fergana/" target="_blank" class="btn btn-outline btn-lg">
+                        <a href="https://www.instagram.com/remont__fergana/" target="_blank" class="btn btn-glass btn-lg">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                             Instagram
                         </a>
@@ -491,7 +542,7 @@
     <!-- Contact Section -->
     <section class="section contact" id="contact">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header center">
                 <span class="section-tag">Алоқа</span>
                 <h2 class="section-title">Биз билан <span class="accent">боғланинг</span></h2>
             </div>
@@ -499,7 +550,7 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         </div>
                         <div>
                             <h4>Телефон</h4>
@@ -508,7 +559,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                         </div>
                         <div>
                             <h4>Манзил</h4>
@@ -517,7 +568,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                         </div>
                         <div>
                             <h4>Instagram</h4>
@@ -526,7 +577,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                         </div>
                         <div>
                             <h4>Иш вақти</h4>
@@ -537,12 +588,7 @@
                 <div class="contact-map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24326.63895935!2d71.7789!3d40.3838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb8336ec8a8e5d%3A0x2fe0e83e75fd3a!2sFergana%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1234567890"
-                        width="100%"
-                        height="100%"
-                        style="border:0; border-radius: 16px;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
+                        width="100%" height="100%" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
             </div>
@@ -552,21 +598,16 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-top">
                 <div class="footer-brand">
                     <a href="#hero" class="footer-logo">
-                        <span class="logo-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                                <polyline points="9 22 9 12 15 12 15 22"/>
-                            </svg>
-                        </span>
+                        <div class="logo-mark small">RF</div>
                         <div>
-                            <span class="logo-text">REMONT</span>
-                            <span class="logo-sub">FERGANA</span>
+                            <span class="logo-text">Remont</span>
+                            <span class="logo-sub">Fergana</span>
                         </div>
                     </a>
-                    <p>Фарғонада сифатли таъмирлаш хизмати. 20 йилдан ортиқ тажриба.</p>
+                    <p>Фарғонада сифатли таъмирлаш хизмати. 20 йилдан ортиқ тажриба. Барча ишларга кафолат.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Саҳифалар</h4>
@@ -586,16 +627,16 @@
                         <li><a href="#services">Иситиш тизимлари</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
+                <div class="footer-contact-col">
                     <h4>Боғланиш</h4>
                     <a href="tel:+998916502315" class="footer-phone">+998 91 650-23-15</a>
                     <p>Фарғона ш., Лутфий кўчаси 11</p>
                     <div class="footer-social">
                         <a href="https://www.instagram.com/remont__fergana/" target="_blank" aria-label="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                         </a>
                         <a href="https://t.me/remont_fergana" target="_blank" aria-label="Telegram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.855.075 1.644.357 1.948.153.165.397.354.61.504.652.46 4.027 2.651 4.027 2.651l1.521 4.676s.26.837 1.007.843c.3.002.632-.102.87-.36l2.045-2.144 3.934 3.178s.882.697 1.7.276c.823-.425.992-1.308 1.046-1.638l3.16-16.148a2.338 2.338 0 0 0-.16-1.286 2.038 2.038 0 0 0-1.44-1.246z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.855.075 1.644.357 1.948.153.165.397.354.61.504.652.46 4.027 2.651 4.027 2.651l1.521 4.676s.26.837 1.007.843c.3.002.632-.102.87-.36l2.045-2.144 3.934 3.178s.882.697 1.7.276c.823-.425.992-1.308 1.046-1.638l3.16-16.148a2.338 2.338 0 0 0-.16-1.286 2.038 2.038 0 0 0-1.44-1.246z"/></svg>
                         </a>
                     </div>
                 </div>
@@ -606,7 +647,7 @@
         </div>
     </footer>
 
-    <!-- WhatsApp/Phone floating button -->
+    <!-- Floating Phone Button -->
     <a href="tel:+998916502315" class="floating-btn" aria-label="Қўнғироқ қилинг">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     </a>
