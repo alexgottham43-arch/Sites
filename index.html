@@ -1,39 +1,53 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UZBELAS Performance — Премиальный автотюнинг и детейлинг в Ташкенте</title>
-    <meta name="description" content="UZBELAS Performance — премиальный центр автотюнинга и детейлинга в Ташкенте. Auto Spa, PPF, Stage-модификации, карбон. Только совершенство.">
+    <title>Remont Fergana — Фарғонада сифатли таъмирлаш хизмати</title>
+    <meta name="description" content="Фарғонада квартира, уй, коттедж ва офис таъмирлаш. Сифатли ремонт, сантехника, электрика, иситиш тизимлари. +998 91 650-23-15">
+    <meta name="keywords" content="ремонт Фарғона, таъмирлаш, квартира ремонт, уй таъмирлаш, сантехника, электрика, Fergana remont">
+    <meta property="og:title" content="Remont Fergana — Сифатли таъмирлаш хизмати">
+    <meta property="og:description" content="Фарғонада барча турдаги таъмирлаш ишлари. Квартира, уй, офис ремонти.">
+    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏎</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
 </head>
 <body>
     <!-- Preloader -->
     <div class="preloader" id="preloader">
-        <div class="preloader-logo">UZBELAS</div>
+        <div class="preloader-content">
+            <div class="preloader-spinner"></div>
+            <div class="preloader-text">REMONT FERGANA</div>
+        </div>
     </div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <span class="logo-text">UZBELAS</span>
-                <span class="logo-sub">PERFORMANCE</span>
+                <div class="logo-mark">RF</div>
+                <div class="logo-text-wrap">
+                    <span class="logo-text">Remont</span>
+                    <span class="logo-sub">Fergana</span>
+                </div>
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#process">Процесс</a></li>
-                <li><a href="#gallery">Галерея</a></li>
-                <li><a href="#reviews">Отзывы</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#about">Биз ҳақимизда</a></li>
+                <li><a href="#services">Хизматлар</a></li>
+                <li><a href="#portfolio">Ишларимиз</a></li>
+                <li><a href="#process">Жараён</a></li>
+                <li><a href="#reviews">Фикрлар</a></li>
+                <li><a href="#videos">Видео</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+                <li><a href="#contact">Алоқа</a></li>
             </ul>
-            <a href="tel:+998907887716" class="nav-cta">Записаться</a>
+            <a href="tel:+998916502315" class="nav-cta">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Қўнғироқ
+            </a>
             <button class="nav-toggle" id="navToggle" aria-label="Меню">
                 <span></span>
                 <span></span>
@@ -45,88 +59,99 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-bg">
-            <img src="img/hero-bg.jpg" alt="UZBELAS Performance" class="hero-bg-img">
+            <img src="img/hero-renovation.jpg" alt="Remont Fergana" class="hero-bg-img">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <div class="hero-badge">Premium Auto Performance</div>
+            <div class="hero-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Фарғонада №1 таъмирлаш хизмати
+            </div>
             <h1 class="hero-title">
-                <span class="hero-title-line">UZBELAS</span>
-                <span class="hero-title-line accent">PERFORMANCE</span>
+                <span>Уйингизни</span>
+                <span class="accent">орзуингиздаги</span>
+                <span>жойга айлантирамиз</span>
             </h1>
-            <p class="hero-subtitle">Премиальный центр автотюнинга и детейлинга в Ташкенте. Только чёрный и белый. Только совершенство.</p>
+            <p class="hero-subtitle">Квартира, уй, коттедж ва офисларни замонавий услубда таъмирлаймиз. Евростандарт сифатида. Кафолат берамиз.</p>
             <div class="hero-actions">
-                <a href="#services" class="btn btn-primary">Наши услуги</a>
-                <a href="#gallery" class="btn btn-outline">Галерея работ</a>
+                <a href="tel:+998916502315" class="btn btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    +998 91 650-23-15
+                </a>
+                <a href="#services" class="btn btn-glass">Хизматларимиз</a>
+                <a href="https://www.instagram.com/remont__fergana/" target="_blank" class="btn btn-glass">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    Instagram
+                </a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number">5.0</span>
-                    <span class="stat-label">Рейтинг Яндекс</span>
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Йил тажриба</span>
                 </div>
+                <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number">46+</span>
-                    <span class="stat-label">Отзывов</span>
+                    <span class="stat-number">1500+</span>
+                    <span class="stat-label">Лойиҳалар</span>
                 </div>
+                <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Проектов</span>
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Кафолат</span>
                 </div>
             </div>
-        </div>
-        <div class="hero-scroll">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section class="section about" id="about">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">О компании</span>
-                <h2 class="section-title">Культура безупречной<br><span class="accent">чистоты и мощности</span></h2>
-            </div>
             <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img main-img">
+                        <img src="img/modern-interior.jpg" alt="Замонавий интерьер" loading="lazy">
+                    </div>
+                    <div class="about-img secondary-img">
+                        <img src="img/renovation-tools.jpg" alt="Таъмирлаш асбоблари" loading="lazy">
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="exp-number">20+</span>
+                        <span class="exp-text">Йил тажриба</span>
+                    </div>
+                </div>
                 <div class="about-text">
-                    <p class="about-lead">UZBELAS PERFORMANCE — это место, где есть всё для вашего автомобиля. Это культура безупречной чистоты, защиты и индивидуализации.</p>
-                    <p>Мы работаем с премиальными материалами, без компромиссов к деталям и срокам. Наши зоны: Auto Spa, работы с защитными и стилистическими плёнками, Stage-модификации, карбон.</p>
+                    <span class="section-tag">Биз ҳақимизда</span>
+                    <h2 class="section-title">Фарғонада <span class="accent">ишончли</span> таъмирлаш хизмати</h2>
+                    <p class="about-lead">Биз — Фарғона шаҳридаги етакчи таъмирлаш ва қурилиш компаниясимиз. Уйингизни замонавий, чиройли ва қулай қилиш бизнинг мақсадимиз.</p>
+                    <p>20 йилдан ортиқ тажрибага эга профессионал усталаримиз квартира, уй, коттедж ва офислар ремонтини евростандарт сифатида бажаради.</p>
                     <div class="about-features">
                         <div class="about-feature">
                             <div class="feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                             </div>
                             <div>
-                                <h4>Гарантия качества</h4>
-                                <p>Фиксируем сроки и условия в договоре</p>
+                                <h4>10 йилгача кафолат</h4>
+                                <p>Барча ишларга ёзма кафолат берамиз</p>
                             </div>
                         </div>
                         <div class="about-feature">
                             <div class="feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                             </div>
                             <div>
-                                <h4>Точные сроки</h4>
-                                <p>Работаем по чек-листу без задержек</p>
+                                <h4>Аниқ муддатлар</h4>
+                                <p>Шартномада белгиланган вақтда тугатамиз</p>
                             </div>
                         </div>
                         <div class="about-feature">
                             <div class="feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                             </div>
                             <div>
-                                <h4>Премиум материалы</h4>
-                                <p>Только проверенные составы и плёнки</p>
+                                <h4>Сифатли материаллар</h4>
+                                <p>Фақат текширилган, сифатли материаллар</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="about-img-wrapper">
-                        <img src="img/gallery4.jpg" alt="UZBELAS Performance" loading="lazy">
-                    </div>
-                    <div class="about-quote">
-                        <blockquote>&laquo;Не найдя любви в людях, мы нашли её в машинах.&raquo;</blockquote>
                     </div>
                 </div>
             </div>
@@ -136,114 +161,211 @@
     <!-- Services Section -->
     <section class="section services" id="services">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Наши услуги</span>
-                <h2 class="section-title">Премиальный<br><span class="accent">спектр услуг</span></h2>
+            <div class="section-header center">
+                <span class="section-tag">Хизматлар</span>
+                <h2 class="section-title">Барча турдаги <span class="accent">таъмирлаш</span> ишлари</h2>
+                <p class="section-desc">Биз квартира, уй ва офисларнинг тўлиқ таъмирлашини бажарамиз — кичик косметик ишлардан тортиб тўлиқ капитал ремонтгача.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-number">01</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M3 12h18M5.636 5.636l12.728 12.728M18.364 5.636L5.636 18.364"/></svg>
+                    <div class="service-img">
+                        <img src="img/living-room.jpg" alt="Квартира ремонти" loading="lazy">
                     </div>
-                    <h3>Детейлинг</h3>
-                    <p>Комплексный уход: кузов, салон, двигатель. Сохраняем премиальный вид автомобиля.</p>
-                    <ul class="service-list">
-                        <li>Уход за деталями салона</li>
-                        <li>Полировка и защита покрытия</li>
-                        <li>Глубокая очистка и восстановление блеска</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">01</div>
+                        <h3>Квартира ва уй ремонти</h3>
+                        <p>Косметик, капитал ва дизайнерлик ремонт. Евростандарт сифатида.</p>
+                        <ul class="service-list">
+                            <li>Косметик ремонт</li>
+                            <li>Капитал ремонт</li>
+                            <li>Дизайнерлик лойиҳа</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">02</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    <div class="service-img">
+                        <img src="img/bathroom-tile.jpg" alt="Кафель ишлари" loading="lazy">
                     </div>
-                    <h3>Оклейка бронеплёнкой</h3>
-                    <p>Невидимая защита кузова и комфорт в салоне. PPF, антигравийная плёнка, тонировка.</p>
-                    <ul class="service-list">
-                        <li>Долговечная защита и стиль</li>
-                        <li>Тонировка стёкол премиум-плёнками</li>
-                        <li>Оклейка антигравийной PPF</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">02</div>
+                        <h3>Кафель ва плитка</h3>
+                        <p>Девор ва полга кафель ўрнатиш. Ваннахона ва ошхона учун.</p>
+                        <ul class="service-list">
+                            <li>Девор кафели</li>
+                            <li>Пол плиткаси</li>
+                            <li>Мозаика ишлари</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">03</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68 1.65 1.65 0 0 0 10 3.17V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    <div class="service-img">
+                        <img src="img/plumbing-work.jpg" alt="Сантехника" loading="lazy">
                     </div>
-                    <h3>Техническое обслуживание</h3>
-                    <p>Регулярный сервис: масла, фильтры, тормоза. Всё для надёжной эксплуатации авто.</p>
-                    <ul class="service-list">
-                        <li>Замена масла и фильтров</li>
-                        <li>Диагностика основных узлов</li>
-                        <li>Замена выхлопной системы</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">03</div>
+                        <h3>Сантехника</h3>
+                        <p>Қувурлар монтажи, канализация, сантехник жиҳозлар ўрнатиш.</p>
+                        <ul class="service-list">
+                            <li>Қувур монтажи</li>
+                            <li>Унитоз, ванна ўрнатиш</li>
+                            <li>Канализация тизими</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">04</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    <div class="service-img">
+                        <img src="img/electrical-work.jpg" alt="Электрика" loading="lazy">
                     </div>
-                    <h3>Перешив салона и руля</h3>
-                    <p>Индивидуализация интерьера: кожа, алькантара, эксклюзивные материалы.</p>
-                    <ul class="service-list">
-                        <li>Тюнинг под стиль клиента</li>
-                        <li>Выбор материалов и оттенков</li>
-                        <li>Перешив руля, сидений, потолка</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">04</div>
+                        <h3>Электрика</h3>
+                        <p>Электр тармоқлари, розетка, шалтер, чироқлар ўрнатиш.</p>
+                        <ul class="service-list">
+                            <li>Электр симлари</li>
+                            <li>Розетка ва шалтер</li>
+                            <li>Ёритиш тизимлари</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">05</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                    <div class="service-img">
+                        <img src="img/painting-wall.jpg" alt="Маляр ишлари" loading="lazy">
                     </div>
-                    <h3>Auto Spa</h3>
-                    <p>Глубокая очистка, полировка, уход за салоном. Возвращаем первозданность и блеск.</p>
-                    <ul class="service-list">
-                        <li>Химчистка салона</li>
-                        <li>Полировка кузова</li>
-                        <li>Керамическое покрытие</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">05</div>
+                        <h3>Маляр ва бўяш</h3>
+                        <p>Шпаклёвка, бўяш, обой ёпиштириш, декоратив қоплама.</p>
+                        <ul class="service-list">
+                            <li>Шпаклёвка ишлари</li>
+                            <li>Бўяш ва обой</li>
+                            <li>Декоратив штукатурка</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">06</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    <div class="service-img">
+                        <img src="img/heating-system.jpg" alt="Иситиш тизими" loading="lazy">
                     </div>
-                    <h3>Stage модификация</h3>
-                    <p>Стейджинг, улучшение динамики, выхлоп, впуск. Только проверенные решения.</p>
-                    <ul class="service-list">
-                        <li>Чип-тюнинг и Stage 1-3</li>
-                        <li>Системы впуска и выхлопа</li>
-                        <li>Увеличение мощности</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">06</div>
+                        <h3>Иситиш тизимлари</h3>
+                        <p>Иситиш радиаторлари, иссиқ полар, котёллар ўрнатиш.</p>
+                        <ul class="service-list">
+                            <li>Иссиқ пол монтажи</li>
+                            <li>Радиатор ўрнатиш</li>
+                            <li>Котёл таъмирлаш</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">07</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    <div class="service-img">
+                        <img src="img/kitchen-modern.jpg" alt="Гипсокартон" loading="lazy">
                     </div>
-                    <h3>Карбоновые обвесы</h3>
-                    <p>Аэродинамика и стиль. Лёгкие и прочные карбоновые элементы кузова.</p>
-                    <ul class="service-list">
-                        <li>Спойлеры и диффузоры</li>
-                        <li>Капоты и крылья</li>
-                        <li>Зеркала и накладки</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">07</div>
+                        <h3>Гипсокартон ва пластик</h3>
+                        <p>Гипсокартон шифт, арка, ниша, пластик панеллар.</p>
+                        <ul class="service-list">
+                            <li>Гипсокартон конструкция</li>
+                            <li>Натяжной потолок</li>
+                            <li>Пластик панеллар</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">08</div>
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <div class="service-img">
+                        <img src="img/office-renovation.jpg" alt="Маиший техника" loading="lazy">
                     </div>
-                    <h3>Работа с плёнкой</h3>
-                    <p>Защитные и стилистические плёнки. PPF, тонировка, винил — защита и характер.</p>
-                    <ul class="service-list">
-                        <li>Виниловая оклейка</li>
-                        <li>Цветные и текстурные плёнки</li>
-                        <li>Индивидуальный дизайн</li>
-                    </ul>
+                    <div class="service-body">
+                        <div class="service-number">08</div>
+                        <h3>Маиший техника</h3>
+                        <p>Кондиционер, Аристон, кир ювиш машинаси, газ плита ўрнатиш.</p>
+                        <ul class="service-list">
+                            <li>Кондиционер монтажи</li>
+                            <li>Аристон ўрнатиш</li>
+                            <li>Газ плита таъмирлаш</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Gallery Section — Real Instagram Photos -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Портфолио</span>
+                <h2 class="section-title">Бизнинг <span class="accent">ишларимиз</span></h2>
+                <p class="section-desc">Ҳар бир лойиҳамизга алоҳида эътибор берамиз. Instagram саҳифамиздан реал натижалар.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item tall">
+                    <img src="img/ig4.jpg" alt="Marvarid декоратив штукатурка" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Декор</span>
+                        <h4>Декоратив штукатурка</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item tall">
+                    <img src="img/ig5.jpg" alt="Отточенто марварид" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Бўяш</span>
+                        <h4>Отточенто қоплама</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item tall">
+                    <img src="img/ig6.jpg" alt="Замонавий ремонт" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Ремонт</span>
+                        <h4>Замонавий услуб</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item tall">
+                    <img src="img/ig1.jpg" alt="Ремонт ишлари" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Ишлар</span>
+                        <h4>Сифатли натижа</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item tall">
+                    <img src="img/ig3.jpg" alt="Remont Fergana" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Лойиҳа</span>
+                        <h4>Квартира ремонти</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item tall">
+                    <img src="img/ig7.jpg" alt="Ремонт натижаси" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Натижа</span>
+                        <h4>Тайёр лойиҳа</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Reels Section — Embedded Instagram Videos -->
+    <section class="section video-reels" id="videos">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Видео</span>
+                <h2 class="section-title">Ишларимизни <span class="accent">видеода</span> кўринг</h2>
+                <p class="section-desc">Instagram Reels — ремонт жараёни ва натижалар. Ҳаммаси ҳақиқий!</p>
+            </div>
+            <div class="reels-grid">
+                <div class="reel-card">
+                    <iframe src="https://www.instagram.com/reel/DWy5Q0KiKLU/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+                </div>
+                <div class="reel-card">
+                    <iframe src="https://www.instagram.com/reel/DWwPdfDiNuZ/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+                </div>
+                <div class="reel-card">
+                    <iframe src="https://www.instagram.com/reel/DWhFcinCKqp/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+                </div>
+                <div class="reel-card">
+                    <iframe src="https://www.instagram.com/reel/DQOlO_aiLx3/embed/" frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -252,181 +374,174 @@
     <!-- Process Section -->
     <section class="section process" id="process">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Как мы работаем</span>
-                <h2 class="section-title">Процесс от<br><span class="accent">заявки до выдачи</span></h2>
+            <div class="section-header center">
+                <span class="section-tag">Жараён</span>
+                <h2 class="section-title">Қандай <span class="accent">ишлаймиз?</span></h2>
             </div>
-            <div class="process-grid">
+            <div class="process-timeline">
                 <div class="process-step">
-                    <div class="process-number">01</div>
-                    <h3>Диагностика</h3>
-                    <p>Понимаем задачу и состояние авто. Формируем план работ и смету.</p>
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-num">01</span>
+                        <h3>Қўнғироқ қилинг</h3>
+                        <p>Бизга қўнғироқ ёки Instagram орқали ёзинг. Бепул маслаҳат берамиз.</p>
+                    </div>
                 </div>
                 <div class="process-step">
-                    <div class="process-number">02</div>
-                    <h3>Подготовка</h3>
-                    <p>Площадка, материалы, инструменты — всё заранее готовим под ваш проект.</p>
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-num">02</span>
+                        <h3>Баҳолаш</h3>
+                        <p>Устамиз келиб кўради, ўлчайди ва аниқ нарх айтади.</p>
+                    </div>
                 </div>
                 <div class="process-step">
-                    <div class="process-number">03</div>
-                    <h3>Работы</h3>
-                    <p>Исполняем аккуратно и последовательно, с промежуточным контролем качества.</p>
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-num">03</span>
+                        <h3>Шартнома</h3>
+                        <p>Нарх, муддат ва шартлар ёзма шартномада қайд этилади.</p>
+                    </div>
                 </div>
                 <div class="process-step">
-                    <div class="process-number">04</div>
-                    <h3>Выдача</h3>
-                    <p>Финальная инспекция, рекомендации по уходу, фото/видео результата.</p>
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-num">04</span>
+                        <h3>Иш бошлаймиз</h3>
+                        <p>Тажрибали усталаримиз ишни бошлайди. Ҳар куни ҳисобот.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-num">05</span>
+                        <h3>Топшириш</h3>
+                        <p>Тайёр ишни кўрасиз ва қабул қиласиз. Кафолат берамиз!</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="section gallery" id="gallery">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Портфолио</span>
-                <h2 class="section-title">Галерея<br><span class="accent">наших работ</span></h2>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item large">
-                    <img src="img/service-ppf.jpg" alt="PPF + Детейлинг комплекс" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/gallery5.jpg" alt="Auto Spa" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/service-carbon.jpg" alt="Карбоновые обвесы" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/gallery6.jpg" alt="Stage модификация" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/gallery7.jpg" alt="Перешив салона" loading="lazy">
-                </div>
-                <div class="gallery-item large">
-                    <img src="img/gallery8.jpg" alt="Тонировка и PPF" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/gallery9.jpg" alt="Детейлинг" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/service-polish.jpg" alt="Полировка" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="img/gallery3.jpg" alt="UZBELAS Performance" loading="lazy">
-                </div>
-            </div>
-            <div class="gallery-cta">
-                <a href="https://www.instagram.com/uzbelasperformance/" target="_blank" rel="noopener" class="btn btn-primary">Больше работ в Instagram</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Advantages Section -->
-    <section class="section advantages">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Почему мы</span>
-                <h2 class="section-title">Наши<br><span class="accent">преимущества</span></h2>
-            </div>
-            <div class="advantages-grid">
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    </div>
-                    <h3>Чистота процесса</h3>
-                    <p>От въезда до выдачи — каждая минута под контролем QA.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-                    </div>
-                    <h3>Материалы PRO</h3>
-                    <p>Только проверенные составы и плёнки премиум-класса.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    </div>
-                    <h3>Скорость и точность</h3>
-                    <p>Чёткие сроки без компромиссов к качеству.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    </div>
-                    <h3>Поддержка</h3>
-                    <p>Остаёмся на связи: уход, допработы, апгрейды.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reviews Section (Elfsight Google Reviews Widget) -->
+    <!-- Reviews Section -->
     <section class="section reviews" id="reviews">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Отзывы</span>
-                <h2 class="section-title">Что говорят<br><span class="accent">наши клиенты</span></h2>
-                <p class="section-subtitle">Реальные отзывы с Google Maps — обновляются автоматически</p>
+            <div class="section-header center">
+                <span class="section-tag">Фикрлар</span>
+                <h2 class="section-title">Мижозлар <span class="accent">нима дейди</span></h2>
             </div>
-            <!-- Elfsight Google Reviews Widget -->
-            <div class="elfsight-app-2caf41df-7e37-4102-a625-464cdc84c88e" data-elfsight-app-lazy></div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Жуда яхши ишлашди! Квартирамизни тўлиқ янгиладилар. Сифати зўр, нархи ҳам ўринли. Тавсия қиламан!»</p>
+                    <div class="review-author">
+                        <div class="review-avatar">А</div>
+                        <div>
+                            <strong>Абдулла К.</strong>
+                            <span>Квартира ремонти</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Ваннахонамизни мўъжизакор қилишди. Кафель ишлари жуда тоза ва чиройли чиқди. Раҳмат катта!»</p>
+                    <div class="review-author">
+                        <div class="review-avatar">Д</div>
+                        <div>
+                            <strong>Дилноза М.</strong>
+                            <span>Ваннахона ремонти</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Офисимизнинг ремонтини тез ва сифатли қилишди. Ходимлар жуда одобли ва профессионал. Яна мурожаат қиламиз.»</p>
+                    <div class="review-author">
+                        <div class="review-avatar">Б</div>
+                        <div>
+                            <strong>Бобур Т.</strong>
+                            <span>Офис ремонти</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Иситиш тизимини мукаммал ўрнатишди. Қиш пайтида уй жуда иссиқ бўлди. Усталар ўз ишини яхши билишади.»</p>
+                    <div class="review-author">
+                        <div class="review-avatar">Ш</div>
+                        <div>
+                            <strong>Шерзод Р.</strong>
+                            <span>Иситиш тизими</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="section faq" id="faq">
+    <!-- Instagram Section -->
+    <section class="section instagram-section" id="instagram">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Вопросы</span>
-                <h2 class="section-title">Часто задаваемые<br><span class="accent">вопросы</span></h2>
+            <div class="section-header center">
+                <span class="section-tag">Instagram</span>
+                <h2 class="section-title">Бизни <span class="accent">Instagramда</span> кузатинг</h2>
+                <p class="section-desc">Энг сўнги ишларимиз, жараёнлар ва натижаларни Instagram саҳифамизда кўринг.</p>
             </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Работаете только по записи?</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Да, чтобы сохранить премиальный уровень сервиса и тайминг, мы работаем по предварительной записи.</p>
+            <div class="instagram-cta">
+                <a href="https://www.instagram.com/remont__fergana/" target="_blank" class="instagram-follow-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <div>
+                        <strong>@remont__fergana</strong>
+                        <span>Кузатиш учун босинг</span>
+                    </div>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+            </div>
+            <div class="instagram-grid">
+                <div class="insta-item">
+                    <img src="img/ig2.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Какие марки плёнок используете?</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Используем премиальные материалы (PPF/винил/тонировка). Конкретный выбор обсуждаем под задачу клиента.</p>
+                <div class="insta-item">
+                    <img src="img/ig4.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Гарантия на работы?</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Да. Гарантийные сроки различаются по типам услуг — фиксируем в договоре/чек-листе.</p>
+                <div class="insta-item">
+                    <img src="img/ig5.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Можно ли приехать без записи на диагностику?</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Рекомендуем связаться заранее, чтобы выделить время и бокс под ваш автомобиль.</p>
+                <div class="insta-item">
+                    <img src="img/ig6.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Сколько времени занимает полная оклейка PPF?</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>В среднем 3-5 рабочих дней в зависимости от сложности кузова и объёма работ.</p>
+                <div class="insta-item">
+                    <img src="img/ig7.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
+                    </div>
+                </div>
+                <div class="insta-item">
+                    <img src="img/ig8.jpg" alt="Instagram post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
                     </div>
                 </div>
             </div>
@@ -436,18 +551,22 @@
     <!-- CTA Section -->
     <section class="section cta-section">
         <div class="container">
-            <div class="cta-content">
-                <h2>Готовы преобразить ваш автомобиль?</h2>
-                <p>Напишите нам в Instagram или позвоните — мы предложим идеальный план работ под ваш запрос.</p>
-                <div class="cta-actions">
-                    <a href="https://www.instagram.com/uzbelasperformance/" target="_blank" rel="noopener" class="btn btn-primary">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                        Написать в Instagram
-                    </a>
-                    <a href="tel:+998907887716" class="btn btn-outline">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        +998 90 788 77 16
-                    </a>
+            <div class="cta-card">
+                <img src="img/apartment-before.jpg" alt="Ремонт" class="cta-bg-img">
+                <div class="cta-overlay"></div>
+                <div class="cta-content">
+                    <h2>Бепул маслаҳат олинг!</h2>
+                    <p>Ҳозироқ қўнғироқ қилинг — устамиз бепул келиб баҳолайди</p>
+                    <div class="cta-actions">
+                        <a href="tel:+998916502315" class="btn btn-primary btn-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            +998 91 650-23-15
+                        </a>
+                        <a href="https://www.instagram.com/remont__fergana/" target="_blank" class="btn btn-glass btn-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            Instagram
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -456,52 +575,42 @@
     <!-- Contact Section -->
     <section class="section contact" id="contact">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Связаться</span>
-                <h2 class="section-title">Контакты<br><span class="accent">и расположение</span></h2>
+            <div class="section-header center">
+                <span class="section-tag">Алоқа</span>
+                <h2 class="section-title">Биз билан <span class="accent">боғланинг</span></h2>
             </div>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        </div>
-                        <div>
-                            <h4>Адрес</h4>
-                            <p>Иссиксув 2519, 100077<br>Ташкент, Узбекистан</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         </div>
                         <div>
                             <h4>Телефон</h4>
-                            <p><a href="tel:+998907887716">+998 90 788 77 16</a></p>
+                            <a href="tel:+998916502315">+998 91 650-23-15</a>
                         </div>
                     </div>
+
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        </div>
-                        <div>
-                            <h4>Часы работы</h4>
-                            <p>Ежедневно: 10:00 — 02:00</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                         </div>
                         <div>
                             <h4>Instagram</h4>
-                            <p><a href="https://www.instagram.com/uzbelasperformance/" target="_blank" rel="noopener">@uzbelasperformance</a></p>
+                            <a href="https://www.instagram.com/remont__fergana/" target="_blank">@remont__fergana</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <div>
+                            <h4>Иш вақти</h4>
+                            <p>Душанба — Шанба: 08:00 — 20:00</p>
                         </div>
                     </div>
                 </div>
-                <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.123456789!2d69.3!3d41.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE4JzAwLjAiTiA2OcKwMTgnMDAuMCJF!5e0!3m2!1sru!2s!4v1234567890" width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+
             </div>
         </div>
     </section>
@@ -509,56 +618,59 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-top">
                 <div class="footer-brand">
-                    <div class="footer-logo">
-                        <span class="logo-text">UZBELAS</span>
-                        <span class="logo-sub">PERFORMANCE</span>
+                    <a href="#hero" class="footer-logo">
+                        <div class="logo-mark small">RF</div>
+                        <div>
+                            <span class="logo-text">Remont</span>
+                            <span class="logo-sub">Fergana</span>
+                        </div>
+                    </a>
+                    <p>Фарғонада сифатли таъмирлаш хизмати. 20 йилдан ортиқ тажриба. Барча ишларга кафолат.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Саҳифалар</h4>
+                    <ul>
+                        <li><a href="#about">Биз ҳақимизда</a></li>
+                        <li><a href="#services">Хизматлар</a></li>
+                        <li><a href="#portfolio">Ишларимиз</a></li>
+                        <li><a href="#contact">Алоқа</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Хизматлар</h4>
+                    <ul>
+                        <li><a href="#services">Квартира ремонти</a></li>
+                        <li><a href="#services">Сантехника</a></li>
+                        <li><a href="#services">Электрика</a></li>
+                        <li><a href="#services">Иситиш тизимлари</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-col">
+                    <h4>Боғланиш</h4>
+                    <a href="tel:+998916502315" class="footer-phone">+998 91 650-23-15</a>
+                    <p>Фарғона шаҳри — под ключ хизмат</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/remont__fergana/" target="_blank" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://t.me/remont_fergana" target="_blank" aria-label="Telegram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.855.075 1.644.357 1.948.153.165.397.354.61.504.652.46 4.027 2.651 4.027 2.651l1.521 4.676s.26.837 1.007.843c.3.002.632-.102.87-.36l2.045-2.144 3.934 3.178s.882.697 1.7.276c.823-.425.992-1.308 1.046-1.638l3.16-16.148a2.338 2.338 0 0 0-.16-1.286 2.038 2.038 0 0 0-1.44-1.246z"/></svg>
+                        </a>
                     </div>
-                    <p>Мы работаем для тех, кто видит разницу в деталях.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Навигация</h4>
-                    <ul>
-                        <li><a href="#about">О нас</a></li>
-                        <li><a href="#services">Услуги</a></li>
-                        <li><a href="#gallery">Галерея</a></li>
-                        <li><a href="#contact">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Услуги</h4>
-                    <ul>
-                        <li><a href="#services">Детейлинг</a></li>
-                        <li><a href="#services">PPF и тонировка</a></li>
-                        <li><a href="#services">Stage тюнинг</a></li>
-                        <li><a href="#services">Карбон</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Контакты</h4>
-                    <ul>
-                        <li><a href="tel:+998907887716">+998 90 788 77 16</a></li>
-                        <li><a href="https://www.instagram.com/uzbelasperformance/" target="_blank">Instagram</a></li>
-                        <li>Ташкент, Иссиксув 2519</li>
-                        <li>Ежедневно 10:00 — 02:00</li>
-                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 UZBELAS Performance. Все права защищены.</p>
+                <p>&copy; 2024 Remont Fergana. Барча ҳуқуқлар ҳимояланган.</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating Phone Button -->
-    <a href="tel:+998907887716" class="floating-phone" aria-label="Позвонить">
+    <a href="tel:+998916502315" class="floating-btn" aria-label="Қўнғироқ қилинг">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <span>+998 90 788 77 16</span>
     </a>
-
-    <!-- Elfsight Platform Script -->
-    <script src="https://elfsightcdn.com/platform.js" async></script>
 
     <script src="script.js"></script>
 </body>

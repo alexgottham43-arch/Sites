@@ -1,116 +1,174 @@
-// Preloader
-window.addEventListener('load', () => {
+/* ============================================
+   REMONT FERGANA — JavaScript
+   ============================================ */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Preloader
     const preloader = document.getElementById('preloader');
-    setTimeout(() => {
-        preloader.classList.add('hidden');
-    }, 1000);
-});
-
-// Navbar scroll effect
-const navbar = document.getElementById('navbar');
-let lastScroll = 0;
-
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+    if (preloader) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+            }, 800);
+        });
+        setTimeout(() => {
+            preloader.classList.add('hidden');
+        }, 3000);
     }
-    
-    lastScroll = currentScroll;
-});
 
-// Mobile navigation
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
-
-navToggle.addEventListener('click', () => {
-    navToggle.classList.toggle('active');
-    navLinks.classList.toggle('active');
-    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-});
-
-// Close mobile nav on link click
-navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        navToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-        document.body.style.overflow = '';
-    });
-});
-
-// FAQ Accordion
-const faqItems = document.querySelectorAll('.faq-item');
-
-faqItems.forEach(item => {
-    const question = item.querySelector('.faq-question');
-    question.addEventListener('click', () => {
-        const isActive = item.classList.contains('active');
-        
-        // Close all
-        faqItems.forEach(i => i.classList.remove('active'));
-        
-        // Open clicked if wasn't active
-        if (!isActive) {
-            item.classList.add('active');
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    const handleScroll = () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
         }
-    });
-});
+    };
+    window.addEventListener('scroll', handleScroll);
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            const offset = navbar.offsetHeight + 20;
-            const position = target.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({
-                top: position,
-                behavior: 'smooth'
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
             });
-        }
+        });
+    }
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    const activateNavOnScroll = () => {
+        const scrollPos = window.scrollY + 100;
+        sections.forEach(section => {
+            const top = section.offsetTop;
+            const height = section.offsetHeight;
+            const id = section.getAttribute('id');
+
+            if (scrollPos >= top && scrollPos < top + height) {
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href') === '#' + id) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+        });
+    };
+    window.addEventListener('scroll', activateNavOnScroll);
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const offset = 80;
+                const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
-});
 
-// Intersection Observer for animations
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-};
+    // Fade-in on scroll (Intersection Observer)
+    const fadeElements = document.querySelectorAll(
+        '.service-card, .portfolio-item, .process-step, .review-card, .contact-item, .about-feature, .about-image'
+    );
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in');
-            observer.unobserve(entry.target);
-        }
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, index * 80);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    fadeElements.forEach(el => {
+        el.classList.add('fade-in');
+        observer.observe(el);
     });
-}, observerOptions);
 
-// Observe elements for animation
-document.querySelectorAll('.service-card, .process-step, .advantage-card, .review-card, .gallery-item').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    observer.observe(el);
-});
+    // Counter animation
+    const counters = document.querySelectorAll('.stat-number');
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const text = target.textContent;
+                const match = text.match(/(\d+)/);
+                if (match) {
+                    const finalNum = parseInt(match[1]);
+                    const suffix = text.replace(match[1], '');
+                    let current = 0;
+                    const increment = Math.ceil(finalNum / 60);
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= finalNum) {
+                            current = finalNum;
+                            clearInterval(timer);
+                        }
+                        target.textContent = current + suffix;
+                    }, 30);
+                }
+                counterObserver.unobserve(target);
+            }
+        });
+    }, { threshold: 0.5 });
 
-// Add stagger delay to grid items
-document.querySelectorAll('.services-grid .service-card').forEach((card, i) => {
-    card.style.animationDelay = `${i * 0.1}s`;
-});
+    counters.forEach(counter => counterObserver.observe(counter));
 
-document.querySelectorAll('.process-grid .process-step').forEach((step, i) => {
-    step.style.animationDelay = `${i * 0.15}s`;
-});
+    // Parallax effect on hero
+    const heroContent = document.querySelector('.hero-content');
+    if (heroContent) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            if (scrolled < window.innerHeight) {
+                heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+                heroContent.style.opacity = 1 - (scrolled / window.innerHeight) * 0.8;
+            }
+        });
+    }
 
-document.querySelectorAll('.advantages-grid .advantage-card').forEach((card, i) => {
-    card.style.animationDelay = `${i * 0.1}s`;
-});
-
-document.querySelectorAll('.reviews-grid .review-card').forEach((card, i) => {
-    card.style.animationDelay = `${i * 0.1}s`;
+    // Service card hover tilt effect
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+        });
+    });
 });
