@@ -401,6 +401,12 @@ img {
     font-weight: 400;
 }
 
+.section-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.5;
+    margin-top: 12px;
+}
+
 /* ===== ABOUT ===== */
 .about-grid {
     display: grid;
