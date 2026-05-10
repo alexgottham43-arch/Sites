@@ -13,13 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍓</text></svg>">
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
     <!-- Preloader -->
     <div class="preloader" id="preloader">
         <div class="preloader-content">
-            <div class="preloader-logo">Look<span>berry</span></div>
+            <img src="images/logo.png" alt="LookBerry" class="preloader-logo-img">
             <div class="preloader-tagline">Bir luqmada sevib qolasiz! 🍓</div>
             <div class="preloader-bar"><div class="preloader-progress"></div></div>
         </div>
@@ -29,7 +29,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <span class="logo-emoji">🍓</span>
+                <img src="images/logo.png" alt="LookBerry" class="nav-logo-img">
                 <span class="logo-text">Look<span class="logo-accent">berry</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -69,7 +69,18 @@
                 <span class="main-line">sevib qolasiz!</span>
                 <span class="emoji-line">🍓🥐🍫</span>
             </h1>
-            <p class="hero-subtitle">Энг мазали круассанлар, янги мевалар ва шоколад десертлар. Ҳар бир луқма — бахт!</p>
+            <p class="hero-subtitle">Энг мазали круассанлар, янги мевалар ва итальян шоколад десертлар. Ҳар бир луқма — бахт!</p>
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <span>🍓</span> Свежие ягоды
+                </div>
+                <div class="hero-feature">
+                    <span>🍫</span> Итальянский шоколад
+                </div>
+                <div class="hero-feature">
+                    <span>🌿</span> Натуральные ингредиенты
+                </div>
+            </div>
             <div class="hero-actions">
                 <a href="tel:+998200212104" class="btn btn-primary">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -92,6 +103,9 @@
                 </div>
             </div>
         </div>
+        <div class="hero-image">
+            <img src="images/hero-croissant.png" alt="LookBerry круассан" class="hero-photo">
+        </div>
     </section>
 
     <!-- About Section -->
@@ -100,23 +114,23 @@
             <div class="section-header">
                 <span class="section-tag">🍓 Биз ҳақимизда</span>
                 <h2 class="section-title">Нима учун <span class="highlight">LookBerry</span>?</h2>
-                <p class="section-desc">Биз ҳар бир десертни севги билан тайёрлаймиз. Фақат янги мевалар, сифатли шоколад ва ҳақиқий круассанлар.</p>
+                <p class="section-desc">Биз ҳар бир десертни севги билан тайёрлаймиз. Фақат янги мевалар, итальян шоколад ва ҳақиқий круассанлар.</p>
             </div>
             <div class="about-grid">
                 <div class="about-card">
                     <div class="about-emoji">🥐</div>
                     <h3>Круассанлар</h3>
-                    <p>Ичига шоколад, мевалар, Nutella, KitKat ва бошқа мазали нарсалар солинган иссиқ круассанлар.</p>
+                    <p>Ичига итальян шоколад, мевалар, KitKat ва бошқа мазали нарсалар солинган иссиқ круассанлар.</p>
                 </div>
                 <div class="about-card">
                     <div class="about-emoji">🍓</div>
                     <h3>Янги мевалар</h3>
-                    <p>Клубника, киви, банан, мандарин — фақат янги ва табиий мевалар ҳар куни.</p>
+                    <p>Клубника, киви, банан, мандарин, голубика — фақат янги ва табиий мевалар ҳар куни.</p>
                 </div>
                 <div class="about-card">
                     <div class="about-emoji">🍫</div>
-                    <h3>Шоколад десертлар</h3>
-                    <p>Эритилган шоколад фонтани, шоколадли стаканлар ва бошқа ширинликлар.</p>
+                    <h3>Итальян шоколад</h3>
+                    <p>Фақат сифатли итальян шоколади. Ҳар бир десертда — ҳақиқий шоколад таъми.</p>
                 </div>
                 <div class="about-card">
                     <div class="about-emoji">🚚</div>
@@ -133,78 +147,106 @@
             <div class="section-header">
                 <span class="section-tag">📋 Менюмиз</span>
                 <h2 class="section-title">Энг <span class="highlight">мазалилар</span></h2>
-                <p class="section-desc">Бизнинг энг машҳур десертларимизни татиб кўринг</p>
+                <p class="section-desc">Свежие ягоды · Итальянский шоколад · Натуральные ингредиенты</p>
             </div>
             <div class="menu-grid">
+                <!-- 1. Клубника Шоколад Standard -->
                 <div class="menu-card">
-                    <div class="menu-img croissant-classic"></div>
+                    <div class="menu-img">
+                        <img src="images/berry-cup.png" alt="Клубника Шоколад Standard" loading="lazy">
+                    </div>
                     <div class="menu-info">
-                        <h3>Классик круассан</h3>
-                        <p>Nutella, клубника, банан ва шоколад бўлакчалари билан</p>
+                        <h3>Клубника Шоколад Standard</h3>
+                        <p class="menu-ingredients">Клубника, Голубика, Итальянский шоколад</p>
                         <div class="menu-footer">
+                            <span class="menu-price">50 000 сўм</span>
+                            <span class="menu-tag">🍓 Классик</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2. Клубника Шоколад Mix -->
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <img src="images/berry-cup.png" alt="Клубника Шоколад Mix" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Клубника Шоколад Mix</h3>
+                        <p class="menu-ingredients">Банан, Клубника, Голубика, Итальянский шоколад</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">50 000 сўм</span>
+                            <span class="menu-tag">🍌 Микс</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3. Круассан Стандарт -->
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <img src="images/hero-croissant.png" alt="Круассан Стандарт" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Круассан Стандарт</h3>
+                        <p class="menu-ingredients">Клубника, KitKat шоколад, Итальянский шоколад</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">60 000 сўм</span>
                             <span class="menu-tag">🔥 Хит</span>
                         </div>
                     </div>
                 </div>
+                <!-- 4. Круассан Микс -->
                 <div class="menu-card">
-                    <div class="menu-img croissant-choco"></div>
+                    <div class="menu-img">
+                        <img src="images/croissant-closeup.png" alt="Круассан Микс" loading="lazy">
+                    </div>
                     <div class="menu-info">
-                        <h3>Шоколадли круассан</h3>
-                        <p>KitKat, вафли, шоколад соуси ва клубника билан тўлдирилган</p>
+                        <h3>Круассан Микс</h3>
+                        <p class="menu-ingredients">Банан, Клубника, Киви, Мандарин, KitKat шоколад, Итальянский шоколад</p>
                         <div class="menu-footer">
-                            <span class="menu-tag">⭐ Янги</span>
+                            <span class="menu-price">80 000 сўм</span>
+                            <span class="menu-tag">⭐ Премиум</span>
                         </div>
                     </div>
                 </div>
+                <!-- 5. Ассорти Микс -->
                 <div class="menu-card">
-                    <div class="menu-img fruit-box"></div>
+                    <div class="menu-img">
+                        <img src="images/croissants-box.png" alt="Ассорти Микс" loading="lazy">
+                    </div>
                     <div class="menu-info">
-                        <h3>Мева қутиси</h3>
-                        <p>Клубника, киви, мандарин, банан, голубика — янги кесилган мевалар</p>
+                        <h3>Ассорти Микс</h3>
+                        <p class="menu-ingredients">Банан, Клубника, Мандарин, Итальянский шоколад</p>
                         <div class="menu-footer">
+                            <span class="menu-price">80 000 сўм</span>
+                            <span class="menu-tag">🎁 Набор</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6. Клубника и Банан Бокс -->
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <img src="images/fruit-box.png" alt="Клубника и Банан Бокс" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Клубника и Банан Бокс</h3>
+                        <p class="menu-ingredients">Банан, Клубника</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">60 000 сўм</span>
                             <span class="menu-tag">🍃 Фреш</span>
                         </div>
                     </div>
                 </div>
-                <div class="menu-card">
-                    <div class="menu-img berry-cup"></div>
+                <!-- 7. Ассорти Микс (Премиум) -->
+                <div class="menu-card premium-card">
+                    <div class="menu-img">
+                        <img src="images/croissants-box.png" alt="Ассорти Микс Премиум" loading="lazy">
+                    </div>
                     <div class="menu-info">
-                        <h3>Berry стакан</h3>
-                        <p>Янги мевалар + шоколад соуси + крем стаканда</p>
+                        <h3>Ассорти Микс <span class="premium-badge">Премиум</span></h3>
+                        <p class="menu-ingredients">Банан, Клубника, Мандарин, Мороженое, Итальянский шоколад</p>
                         <div class="menu-footer">
-                            <span class="menu-tag">❤️ Севимли</span>
+                            <span class="menu-price">85 000 сўм</span>
+                            <span class="menu-tag">👑 Топ</span>
                         </div>
                     </div>
-                </div>
-                <div class="menu-card">
-                    <div class="menu-img croissant-fruit"></div>
-                    <div class="menu-info">
-                        <h3>Мевали круассан</h3>
-                        <p>Банан, мандарин, киви, шоколад ва янги мевалар билан</p>
-                        <div class="menu-footer">
-                            <span class="menu-tag">🌈 Ранг-баранг</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-card">
-                    <div class="menu-img chocolate-fondue"></div>
-                    <div class="menu-info">
-                        <h3>Шоколад фонтани</h3>
-                        <p>Эритилган шоколад оқими — мевалар ва круассанга</p>
-                        <div class="menu-footer">
-                            <span class="menu-tag">🍫 Премиум</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-cta">
-                <p>Тўлиқ менюни Instagram'да кўринг ёки қўнғироқ қилинг</p>
-                <div class="menu-buttons">
-                    <a href="https://www.instagram.com/lookberry_uz" target="_blank" class="btn btn-instagram">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                        @lookberry_uz
-                    </a>
-                    <a href="tel:+998200212104" class="btn btn-primary">📞 Буюртма бериш</a>
                 </div>
             </div>
         </div>
@@ -218,40 +260,34 @@
                 <h2 class="section-title">Бизнинг <span class="highlight">десертлар</span></h2>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item large">
-                    <div class="gallery-img img-1"></div>
+                <div class="gallery-item gallery-item-tall">
+                    <img src="images/hero-croissant.png" alt="Круассан с шоколадом" loading="lazy">
                     <div class="gallery-overlay">
-                        <span>🥐 Круассан + Nutella</span>
+                        <span>🥐 Круассан</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <div class="gallery-img img-2"></div>
+                    <img src="images/berry-cup.png" alt="Berry стакан" loading="lazy">
                     <div class="gallery-overlay">
                         <span>🍓 Berry стакан</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <div class="gallery-img img-3"></div>
+                    <img src="images/fruit-box.png" alt="Мева бокс" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>🍌 Мева бокс</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-tall">
+                    <img src="images/croissant-closeup.png" alt="Круассан крупным планом" loading="lazy">
                     <div class="gallery-overlay">
                         <span>🍫 Шоколад круассан</span>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="gallery-img img-4"></div>
+                <div class="gallery-item gallery-item-wide">
+                    <img src="images/croissants-box.png" alt="Круассаны в коробке" loading="lazy">
                     <div class="gallery-overlay">
-                        <span>🥝 Мева қутиси</span>
-                    </div>
-                </div>
-                <div class="gallery-item large">
-                    <div class="gallery-img img-5"></div>
-                    <div class="gallery-overlay">
-                        <span>🍫 Шоколад фонтани</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-img img-6"></div>
-                    <div class="gallery-overlay">
-                        <span>🏪 Бизнинг кафе</span>
+                        <span>📦 Ассорти набор</span>
                     </div>
                 </div>
             </div>
@@ -301,14 +337,7 @@
                     </div>
                 </div>
                 <div class="delivery-visual">
-                    <div class="delivery-emoji-grid">
-                        <span>🥐</span>
-                        <span>🍓</span>
-                        <span>🍫</span>
-                        <span>🥝</span>
-                        <span>🍌</span>
-                        <span>🍊</span>
-                    </div>
+                    <img src="images/fruit-box.png" alt="Доставка LookBerry" class="delivery-photo">
                 </div>
             </div>
         </div>
@@ -399,6 +428,7 @@
     <section class="cta-section" id="contact">
         <div class="container">
             <div class="cta-card">
+                <img src="images/logo.png" alt="LookBerry" class="cta-logo">
                 <h2>Буюртма бериш учун қўнғироқ қилинг!</h2>
                 <p>Ёки Instagram'да ёзинг — биз тезда жавоб берамиз</p>
                 <div class="cta-buttons">
@@ -424,7 +454,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <span class="logo-emoji">🍓</span>
+                        <img src="images/logo.png" alt="LookBerry" class="footer-logo-img">
                         <span class="logo-text">Look<span class="logo-accent">berry</span></span>
                     </div>
                     <p>Bir luqmada sevib qolasiz! 🍓</p>
