@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Fade-in on scroll
-    var fadeElements = document.querySelectorAll('.about-card, .car-card, .advantage-card, .step-card, .review-card, .contact-card');
+    var fadeElements = document.querySelectorAll('.about-card, .car-card, .advantage-card, .step-card, .contact-card');
     var fadeObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {

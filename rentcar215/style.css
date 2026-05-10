@@ -822,69 +822,8 @@ ul { list-style: none; }
     font-size: 1.1rem;
 }
 
-/* ===== REVIEWS ===== */
-.reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-bottom: 48px;
-}
-
-.review-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 28px;
-    transition: var(--transition);
-}
-
-.review-card:hover {
-    background: var(--bg-card-hover);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow);
-}
-
-.review-stars {
-    margin-bottom: 14px;
-    font-size: 1rem;
-    letter-spacing: 2px;
-}
-
-.review-text {
-    color: var(--text);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    font-style: italic;
-}
-
-.review-author {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.review-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 0.95rem;
-}
-
-.review-name {
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.review-date {
-    font-size: 0.8rem;
-    color: var(--text-muted);
+.telegram-section {
+    padding: 60px 0;
 }
 
 .telegram-cta {
@@ -1157,7 +1096,6 @@ ul { list-style: none; }
     .about-grid { grid-template-columns: repeat(2, 1fr); }
     .cars-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
     .advantages-grid { grid-template-columns: repeat(2, 1fr); }
-    .reviews-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto 48px; }
     .contact-grid { grid-template-columns: repeat(2, 1fr); }
     .footer-top { grid-template-columns: 1fr; gap: 32px; }
     
