@@ -135,36 +135,71 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// ===== Contact Form =====
+// ===== Contact Form (Telegram Bot API) =====
+const TG_BOT = 'ODYwNjA3NzE1OTpBQUdPVktnOUgwWTZ5Q2xpYThVMUdGekE1dXhMZkRONzZTcw==';
+const TG_CHAT = '8576708552';
+
+const SERVICE_LABELS = {
+    design: 'Дизайн-проект',
+    turnkey: 'Ремонт под ключ',
+    capital: 'Капитальный ремонт',
+    cosmetic: 'Косметический ремонт',
+    construction: 'Строительство',
+    other: 'Другое'
+};
+
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
+
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const origHTML = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span>Отправка...</span>';
+        submitBtn.disabled = true;
 
         const name = document.getElementById('name').value;
         const phone = document.getElementById('phone').value;
         const service = document.getElementById('service').value;
         const message = document.getElementById('message').value;
 
-        const text = `Новая заявка с сайта HOME STROY:%0A` +
-            `Имя: ${name}%0A` +
-            `Телефон: ${phone}%0A` +
-            `Услуга: ${service || 'Не указана'}%0A` +
-            `Сообщение: ${message || 'Не указано'}`;
+        const serviceLabel = SERVICE_LABELS[service] || service || 'Не указана';
+        const text =
+            `📋 <b>Новая заявка с сайта HOME STROY</b>\n\n` +
+            `👤 <b>Имя:</b> ${name}\n` +
+            `📞 <b>Телефон:</b> ${phone}\n` +
+            `🔧 <b>Услуга:</b> ${serviceLabel}\n` +
+            `💬 <b>Сообщение:</b> ${message || 'Не указано'}`;
 
-        window.open(`https://t.me/homestroyuz?text=${text}`, '_blank');
+        try {
+            const token = atob(TG_BOT);
+            const resp = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ chat_id: TG_CHAT, text: text, parse_mode: 'HTML' })
+            });
+            const data = await resp.json();
 
-        const formWrap = document.querySelector('.contact-form-wrap');
-        formWrap.innerHTML = `
-            <div class="form-success">
-                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                    <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <h3>Заявка отправлена!</h3>
-                <p>Мы перезвоним вам в ближайшее время для обсуждения деталей вашего проекта.</p>
-            </div>
-        `;
+            if (data.ok) {
+                const formWrap = document.querySelector('.contact-form-wrap');
+                formWrap.innerHTML = `
+                    <div class="form-success">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <h3>Заявка отправлена!</h3>
+                        <p>Мы перезвоним вам в ближайшее время для обсуждения деталей вашего проекта.</p>
+                    </div>
+                `;
+            } else {
+                throw new Error('Telegram API error');
+            }
+        } catch (err) {
+            submitBtn.innerHTML = origHTML;
+            submitBtn.disabled = false;
+            alert('Ошибка отправки. Попробуйте позже или напишите нам в Telegram: @homestroyuz');
+        }
     });
 }
 
