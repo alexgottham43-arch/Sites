@@ -125,7 +125,7 @@ window.addEventListener('scroll', () => {
         const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
         if (navLink) {
             if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                navLink.style.color = '#c8a45c';
+                navLink.style.color = '#ffffff';
                 navLink.style.fontWeight = '600';
             } else {
                 navLink.style.color = '';
