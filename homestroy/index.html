@@ -4,610 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME STROY — Ремонт квартир под ключ | Ташкент</title>
-    <meta name="description" content="HOME STROY — профессиональный ремонт квартир и дизайн интерьеров в Ташкенте. Строительство и ремонт под ключ. Более 225 реализованных проектов. +99890 110 53 10">
+    <meta name="description" content="HOME STROY — профессиональный ремонт квартир и дизайн интерьеров в Ташкенте. Строительство и ремонт под ключ. Более 225 реализованных проектов.">
     <meta name="keywords" content="HOME STROY, ремонт квартир, Ташкент, дизайн интерьера, ремонт под ключ, строительство, евроремонт, homestroy.uz">
     <meta property="og:title" content="HOME STROY — Ремонт квартир под ключ | Ташкент">
-    <meta property="og:description" content="Профессиональный ремонт квартир и дизайн интерьеров в Ташкенте. Строительство и ремонт под ключ.">
+    <meta property="og:description" content="Профессиональный ремонт квартир и дизайн интерьеров в Ташкенте.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Preloader -->
     <div class="preloader" id="preloader">
-        <div class="preloader-content">
-            <div class="preloader-logo">HOME<span>STROY</span></div>
-            <div class="preloader-tagline">Renovation & Design Group</div>
-            <div class="preloader-bar"><div class="preloader-progress"></div></div>
+        <img src="img/logo.png" alt="HOME STROY" class="preloader-logo">
+        <div class="preloader-tagline">Renovation & Design Group</div>
+        <div class="scroll-hint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
         </div>
     </div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <img src="img/logo.png" alt="HOME STROY" class="nav-logo-img">
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#process">Как мы работаем</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-            <div class="nav-right">
-                <a href="tel:+998901105310" class="nav-cta">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    Позвонить
-                </a>
-                <button class="nav-toggle" id="navToggle" aria-label="Меню">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
+        <a href="#" class="nav-logo">
+            <img src="img/logo.png" alt="HOME STROY">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Меню">
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-bg">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-badge">Renovation & Design Group</div>
-            <h1 class="hero-title">
-                <span class="hero-line">Ремонт квартир</span>
-                <span class="hero-line accent">под ключ</span>
-                <span class="hero-line">в Ташкенте</span>
-            </h1>
-            <p class="hero-subtitle">Строительство, дизайн интерьеров и ремонт любой сложности. Превращаем ваши идеи в реальность с гарантией качества.</p>
-            <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary">
-                    <span>Бесплатная консультация</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#portfolio" class="btn btn-outline">Наши работы</a>
-            </div>
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <span class="stat-number" data-count="225">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">проектов</span>
-                </div>
-                <div class="hero-stat">
-                    <span class="stat-number" data-count="7">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">лет опыта</span>
-                </div>
-                <div class="hero-stat">
-                    <span class="stat-number" data-count="100">0</span><span class="stat-plus">%</span>
-                    <span class="stat-label">гарантия</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <div class="scroll-indicator">
-                <span>Листайте вниз</span>
-                <div class="scroll-line"></div>
-            </div>
-        </div>
-    </section>
+    <!-- Portfolio -->
+    <main class="portfolio" id="portfolio">
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">О компании</span>
-                <h2 class="section-title">HOME STROY — ваш надёжный <br>партнёр в строительстве</h2>
+        <a href="https://www.youtube.com/watch?v=6ILln6aYfwA" target="_blank" class="project-card project-wide">
+            <div class="project-info">
+                <h2>Проект в Ташкент Сити</h2>
+                <h3>Ремонт под ключ · 110 м²</h3>
             </div>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p class="about-lead">Мы — команда профессионалов, специализирующихся на комплексном ремонте квартир и дизайне интерьеров в Ташкенте.</p>
-                    <p>HOME STROY выполняет ремонт любой сложности: от косметического до капитального, от стандартного до дизайнерского. Наш опыт и профессионализм позволяют реализовать проекты любого масштаба точно в срок и с гарантией качества.</p>
-                    <p>Мы используем только качественные материалы, современные технологии и индивидуальный подход к каждому клиенту. Наша цель — сделать ваш дом местом, где хочется жить.</p>
-                    <div class="about-features">
-                        <div class="about-feature">
-                            <div class="feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
-                            <div>
-                                <strong>Официальный договор</strong>
-                                <span>Фиксируем сроки и стоимость</span>
-                            </div>
-                        </div>
-                        <div class="about-feature">
-                            <div class="feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                            </div>
-                            <div>
-                                <strong>Гарантия на работы</strong>
-                                <span>Полная ответственность за результат</span>
-                            </div>
-                        </div>
-                        <div class="about-feature">
-                            <div class="feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                            </div>
-                            <div>
-                                <strong>Соблюдаем сроки</strong>
-                                <span>Чёткий план и контроль этапов</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="about-image-grid">
-                        <div class="about-img about-img-1">
-                            <img src="img/project-1.jpg" alt="Дизайнерский ремонт в Ташкент Сити" loading="lazy">
-                        </div>
-                        <div class="about-img about-img-2">
-                            <img src="img/project-2.jpg" alt="Интерьер гостиной" loading="lazy">
-                        </div>
-                        <div class="about-img about-img-3">
-                            <img src="img/project-3.jpg" alt="Результат ремонта" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="about-badge">
-                        <span class="badge-number">7+</span>
-                        <span class="badge-text">лет на рынке<br>Ташкента</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <img src="img/project-1.jpg" alt="Проект в Ташкент Сити" loading="lazy">
+        </a>
 
-    <!-- Services Section -->
+        <a href="https://www.youtube.com/watch?v=eVzhP5LipLM" target="_blank" class="project-card">
+            <div class="project-info">
+                <h2>Современная гостиная</h2>
+                <h3>Дизайн интерьера</h3>
+            </div>
+            <img src="img/project-2.jpg" alt="Современная гостиная" loading="lazy">
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=iyrLJRdAb78" target="_blank" class="project-card">
+            <div class="project-info">
+                <h2>Столовая</h2>
+                <h3>Дизайнерская мебель</h3>
+            </div>
+            <img src="img/project-3.jpg" alt="Столовая" loading="lazy">
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=e3_5I1Lb4jA" target="_blank" class="project-card project-wide">
+            <div class="project-info">
+                <h2>Процесс работы</h2>
+                <h3>Укладка полов</h3>
+            </div>
+            <img src="img/project-4.jpg" alt="Процесс работы" loading="lazy">
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=XACZnfVu9Ew" target="_blank" class="project-card">
+            <div class="project-info">
+                <h2>Прихожая</h2>
+                <h3>Неоклассика</h3>
+            </div>
+            <img src="img/project-5.jpg" alt="Прихожая" loading="lazy">
+        </a>
+
+        <div class="project-card project-cta">
+            <h2>225+ проектов</h2>
+            <h3>Смотрите больше работ на нашем YouTube канале</h3>
+            <a href="https://www.youtube.com/@homestroyuz" target="_blank" class="cta-link">YouTube →</a>
+        </div>
+
+    </main>
+
+    <!-- Services -->
     <section class="services" id="services">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-tag">Наши услуги</span>
-                <h2 class="section-title">Полный спектр услуг<br>по ремонту и строительству</h2>
-                <p class="section-desc">От дизайн-проекта до финальной уборки — мы берём на себя весь процесс</p>
+        <div class="services-grid">
+            <div class="service-item">
+                <span class="service-num">01</span>
+                <h3>Дизайн-проект</h3>
+                <p>Разработка полного дизайн-проекта с 3D-визуализацией и рабочими чертежами</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                    </div>
-                    <h3>Дизайн-проект</h3>
-                    <p>Индивидуальный дизайн-проект с 3D визуализацией. Продумываем каждую деталь вашего будущего интерьера.</p>
-                    <div class="service-features">
-                        <span>3D визуализация</span>
-                        <span>Планировка</span>
-                        <span>Подбор материалов</span>
-                    </div>
-                </div>
-                <div class="service-card featured">
-                    <div class="service-badge">Популярное</div>
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                    </div>
-                    <h3>Ремонт под ключ</h3>
-                    <p>Полный комплекс работ от демонтажа до чистовой отделки. Вам остаётся только принять готовую квартиру.</p>
-                    <div class="service-features">
-                        <span>Демонтаж</span>
-                        <span>Черновая отделка</span>
-                        <span>Чистовая отделка</span>
-                        <span>Уборка</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
-                    </div>
-                    <h3>Капитальный ремонт</h3>
-                    <p>Полная реконструкция помещения: замена коммуникаций, перепланировка, выравнивание стен и полов.</p>
-                    <div class="service-features">
-                        <span>Электрика</span>
-                        <span>Сантехника</span>
-                        <span>Перепланировка</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                    </div>
-                    <h3>Косметический ремонт</h3>
-                    <p>Быстрое обновление интерьера: покраска, поклейка обоев, замена напольного покрытия и потолков.</p>
-                    <div class="service-features">
-                        <span>Покраска</span>
-                        <span>Обои</span>
-                        <span>Полы</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-                    </div>
-                    <h3>Строительство</h3>
-                    <p>Строительные работы любого масштаба: от возведения перегородок до полного строительства объекта.</p>
-                    <div class="service-features">
-                        <span>Кладка</span>
-                        <span>Бетонные работы</span>
-                        <span>Кровля</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" x2="12" y1="22.08" y2="12"/></svg>
-                    </div>
-                    <h3>Закупка материалов</h3>
-                    <p>Подбор и закупка материалов по оптовым ценам. Экономим ваше время и деньги до 20%.</p>
-                    <div class="service-features">
-                        <span>Оптовые цены</span>
-                        <span>Доставка</span>
-                        <span>Контроль качества</span>
-                    </div>
-                </div>
+            <div class="service-item">
+                <span class="service-num">02</span>
+                <h3>Ремонт под ключ</h3>
+                <p>Комплексный ремонт от демонтажа до финишной отделки и меблировки</p>
+            </div>
+            <div class="service-item">
+                <span class="service-num">03</span>
+                <h3>Капитальный ремонт</h3>
+                <p>Полная реконструкция помещений с заменой коммуникаций и перепланировкой</p>
+            </div>
+            <div class="service-item">
+                <span class="service-num">04</span>
+                <h3>Строительство</h3>
+                <p>Строительство домов и коттеджей с нуля по индивидуальному проекту</p>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-tag">Портфолио</span>
-                <h2 class="section-title">Наши последние проекты</h2>
-                <p class="section-desc">Реальные работы нашей команды — от дизайн-проекта до готового результата</p>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-card portfolio-large">
-                    <div class="portfolio-video">
-                        <iframe src="https://www.youtube.com/embed/6ILIn6aYfwA" title="Проект в Ташкент сити 110 м²" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Проект в Ташкент Сити</h3>
-                        <span class="portfolio-meta">110 м² &middot; Ремонт под ключ</span>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <div class="portfolio-video">
-                        <iframe src="https://www.youtube.com/embed/iyrtJRdAb78" title="Обзор квартиры 55m2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Квартира 55 м²</h3>
-                        <span class="portfolio-meta">Полный обзор &middot; Современный стиль</span>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <div class="portfolio-video">
-                        <iframe src="https://www.youtube.com/embed/eVZhP5LipLM" title="Ремонт в стиле Неоклассика" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Стиль Неоклассика</h3>
-                        <span class="portfolio-meta">Дизайнерский ремонт &middot; 108 м²</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-cta">
-                <a href="https://www.youtube.com/@homestroyuz" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg>
-                    <span>Все проекты на YouTube</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-tag">Галерея</span>
-                <h2 class="section-title">Фото наших работ</h2>
-                <p class="section-desc">Реальные фотографии с объектов HOME STROY</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item gallery-wide">
-                    <img src="img/project-1.jpg" alt="Ремонт квартиры в Ташкент Сити — гостиная" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span>Гостиная — Ташкент Сити, 110 м²</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="img/project-2.jpg" alt="Современная гостиная с камином" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span>Гостиная — Реализация проекта 108 м²</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="img/project-3.jpg" alt="Столовая с мраморным столом" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span>Столовая — Дизайнерская мебель</span>
-                    </div>
-                </div>
-                <div class="gallery-item gallery-wide">
-                    <img src="img/project-4.jpg" alt="Процесс ремонта — укладка полов" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span>Процесс работы — Укладка полов</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="img/project-5.jpg" alt="Прихожая в стиле Неоклассика" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span>Прихожая — Стиль Неоклассика</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process" id="process">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-tag">Как мы работаем</span>
-                <h2 class="section-title">6 простых шагов<br>к вашему идеальному ремонту</h2>
-            </div>
-            <div class="process-timeline">
-                <div class="process-step">
-                    <div class="step-number">01</div>
-                    <div class="step-content">
-                        <h3>Заявка и консультация</h3>
-                        <p>Вы оставляете заявку — мы перезваниваем и обсуждаем ваши пожелания и бюджет.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">02</div>
-                    <div class="step-content">
-                        <h3>Выезд на объект</h3>
-                        <p>Наш специалист бесплатно выезжает к вам, делает замеры и оценивает объём работ.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">03</div>
-                    <div class="step-content">
-                        <h3>Смета и договор</h3>
-                        <p>Составляем детальную смету, фиксируем стоимость и сроки в договоре.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                        <h3>Дизайн-проект</h3>
-                        <p>Разрабатываем дизайн-проект с 3D визуализацией для вашего согласования.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">05</div>
-                    <div class="step-content">
-                        <h3>Ремонтные работы</h3>
-                        <p>Наши мастера выполняют все работы с ежедневным фото- и видеоотчётом.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">06</div>
-                    <div class="step-content">
-                        <h3>Приёмка и гарантия</h3>
-                        <p>Вы принимаете готовый объект. Мы предоставляем гарантию на все выполненные работы.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-                    </div>
-                    <span class="stat-num" data-count="225">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-text">проектов выполнено</span>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    </div>
-                    <span class="stat-num" data-count="1100">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-text">подписчиков на YouTube</span>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    </div>
-                    <span class="stat-num" data-count="7">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-text">лет на рынке</span>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    </div>
-                    <span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span>
-                    <span class="stat-text">довольных клиентов</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Styles Gallery Section -->
-    <section class="styles" id="styles">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-tag">Стили интерьера</span>
-                <h2 class="section-title">Работаем в любом стиле</h2>
-                <p class="section-desc">Подберём дизайн, который отражает вашу индивидуальность</p>
-            </div>
-            <div class="styles-grid">
-                <div class="style-card">
-                    <div class="style-visual">
-                        <div class="style-icon-wrap">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-                        </div>
-                    </div>
-                    <h3>Неоклассика</h3>
-                    <p>Элегантность и изысканность с современным комфортом</p>
-                </div>
-                <div class="style-card">
-                    <div class="style-visual">
-                        <div class="style-icon-wrap">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                        </div>
-                    </div>
-                    <h3>Модерн</h3>
-                    <p>Чистые линии, функциональность и актуальные тренды</p>
-                </div>
-                <div class="style-card">
-                    <div class="style-visual">
-                        <div class="style-icon-wrap">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        </div>
-                    </div>
-                    <h3>Минимализм</h3>
-                    <p>Простота форм, свободное пространство и свет</p>
-                </div>
-                <div class="style-card">
-                    <div class="style-visual">
-                        <div class="style-icon-wrap">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M3 12h18M5.63 5.63l12.73 12.73M18.36 5.63 5.63 18.36"/></svg>
-                        </div>
-                    </div>
-                    <h3>Лофт</h3>
-                    <p>Индустриальный шарм с элементами уюта</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <span class="section-tag">Контакты</span>
-                    <h2 class="section-title">Готовы начать<br>ваш проект?</h2>
-                    <p class="contact-desc">Оставьте заявку и получите бесплатную консультацию и расчёт стоимости вашего ремонта.</p>
-                    <div class="contact-details">
-                        <a href="tel:+998901105310" class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            </div>
-                            <div>
-                                <strong>Телефон</strong>
-                                <span>+998 90 110 53 10</span>
-                            </div>
-                        </a>
-                        <a href="https://t.me/homestroyuz" target="_blank" rel="noopener noreferrer" class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 1 0 24 12.056A12.014 12.014 0 0 0 11.944 0Zm5.654 8.22-1.736 8.19c-.13.585-.475.727-.964.452l-2.664-1.963-1.286 1.238c-.143.14-.263.26-.538.26l.19-2.712 4.94-4.465c.215-.19-.047-.296-.334-.106l-6.107 3.847-2.632-.82c-.572-.18-.583-.572.12-.848l10.29-3.966c.475-.172.891.106.737.848l-.016.045Z"/></svg>
-                            </div>
-                            <div>
-                                <strong>Telegram</strong>
-                                <span>@homestroyuz</span>
-                            </div>
-                        </a>
-                        <a href="https://www.instagram.com/homestroy.uz/" target="_blank" rel="noopener noreferrer" class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-                            </div>
-                            <div>
-                                <strong>Instagram</strong>
-                                <span>@homestroy.uz</span>
-                            </div>
-                        </a>
-                        <a href="https://www.youtube.com/@homestroyuz" target="_blank" rel="noopener noreferrer" class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg>
-                            </div>
-                            <div>
-                                <strong>YouTube</strong>
-                                <span>HOME STROY UZ</span>
-                            </div>
-                        </a>
-                    </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Свяжитесь с нами</h2>
+                <p>Оставьте заявку и мы перезвоним для бесплатной консультации</p>
+                <div class="contact-details">
+                    <a href="tel:+998901105310" class="contact-link">
+                        <span class="contact-label">Телефон</span>
+                        <span>+998 90 110 53 10</span>
+                    </a>
+                    <a href="https://t.me/homestroyuz" target="_blank" class="contact-link">
+                        <span class="contact-label">Telegram</span>
+                        <span>@homestroyuz</span>
+                    </a>
+                    <a href="https://www.instagram.com/homestroy.uz" target="_blank" class="contact-link">
+                        <span class="contact-label">Instagram</span>
+                        <span>@homestroy.uz</span>
+                    </a>
                 </div>
-                <div class="contact-form-wrap">
-                    <form class="contact-form" id="contactForm">
-                        <h3>Бесплатная консультация</h3>
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
-                        </div>
-                        <div class="form-group">
-                            <select id="service" name="service">
-                                <option value="" disabled selected>Выберите услугу</option>
-                                <option value="design">Дизайн-проект</option>
-                                <option value="turnkey">Ремонт под ключ</option>
-                                <option value="capital">Капитальный ремонт</option>
-                                <option value="cosmetic">Косметический ремонт</option>
-                                <option value="construction">Строительство</option>
-                                <option value="other">Другое</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Расскажите о вашем проекте (площадь, пожелания...)" rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <span>Отправить заявку</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </button>
-                        <p class="form-note">Перезвоним в течение 15 минут</p>
-                    </form>
-                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                    <input type="tel" id="phone" placeholder="Номер телефона" required>
+                    <select id="service">
+                        <option value="" disabled selected>Выберите услугу</option>
+                        <option value="design">Дизайн-проект</option>
+                        <option value="turnkey">Ремонт под ключ</option>
+                        <option value="capital">Капитальный ремонт</option>
+                        <option value="cosmetic">Косметический ремонт</option>
+                        <option value="construction">Строительство</option>
+                        <option value="other">Другое</option>
+                    </select>
+                    <textarea id="message" placeholder="Сообщение" rows="4"></textarea>
+                    <button type="submit">Отправить заявку</button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <div class="footer-logo">HOME<span>STROY</span></div>
-                    <p>Renovation & Design Group</p>
-                    <p class="footer-desc">Профессиональный ремонт квартир и дизайн интерьеров в Ташкенте. Строительство и ремонт под ключ с гарантией качества.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Навигация</h4>
-                    <a href="#about">О нас</a>
-                    <a href="#services">Услуги</a>
-                    <a href="#portfolio">Портфолио</a>
-                    <a href="#process">Как мы работаем</a>
-                    <a href="#contact">Контакты</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Услуги</h4>
-                    <a href="#services">Дизайн-проект</a>
-                    <a href="#services">Ремонт под ключ</a>
-                    <a href="#services">Капитальный ремонт</a>
-                    <a href="#services">Косметический ремонт</a>
-                    <a href="#services">Строительство</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Контакты</h4>
-                    <a href="tel:+998901105310">+998 90 110 53 10</a>
-                    <a href="https://t.me/homestroyuz" target="_blank">Telegram</a>
-                    <a href="https://www.instagram.com/homestroy.uz/" target="_blank">Instagram</a>
-                    <a href="https://www.youtube.com/@homestroyuz" target="_blank">YouTube</a>
-                </div>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="img/logo.png" alt="HOME STROY" class="footer-logo">
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 HOME STROY. Все права защищены.</p>
-                <div class="footer-socials">
-                    <a href="https://www.instagram.com/homestroy.uz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-                    </a>
-                    <a href="https://t.me/homestroyuz" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 1 0 24 12.056A12.014 12.014 0 0 0 11.944 0Zm5.654 8.22-1.736 8.19c-.13.585-.475.727-.964.452l-2.664-1.963-1.286 1.238c-.143.14-.263.26-.538.26l.19-2.712 4.94-4.465c.215-.19-.047-.296-.334-.106l-6.107 3.847-2.632-.82c-.572-.18-.583-.572.12-.848l10.29-3.966c.475-.172.891.106.737.848l-.016.045Z"/></svg>
-                    </a>
-                    <a href="https://www.youtube.com/@homestroyuz" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg>
-                    </a>
-                </div>
+            <div class="footer-address">
+                <span class="footer-label">Адрес</span>
+                <p>Ташкент, Узбекистан</p>
+            </div>
+            <div class="footer-contacts">
+                <span class="footer-label">Контакты</span>
+                <a href="tel:+998901105310">+998 90 110 53 10</a>
+                <a href="https://t.me/homestroyuz">Telegram</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/homestroy.uz" target="_blank" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@homestroyuz" target="_blank" aria-label="YouTube">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+                <a href="https://t.me/homestroyuz" target="_blank" aria-label="Telegram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                </a>
             </div>
         </div>
+        <div class="footer-bottom">
+            <span>© 2025 HOME STROY — Renovation & Design Group</span>
+        </div>
     </footer>
-
-    <!-- Floating WhatsApp/Telegram Button -->
-    <a href="https://t.me/homestroyuz" target="_blank" rel="noopener noreferrer" class="floating-btn" aria-label="Написать в Telegram">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 1 0 24 12.056A12.014 12.014 0 0 0 11.944 0Zm5.654 8.22-1.736 8.19c-.13.585-.475.727-.964.452l-2.664-1.963-1.286 1.238c-.143.14-.263.26-.538.26l.19-2.712 4.94-4.465c.215-.19-.047-.296-.334-.106l-6.107 3.847-2.632-.82c-.572-.18-.583-.572.12-.848l10.29-3.966c.475-.172.891.106.737.848l-.016.045Z"/></svg>
-    </a>
 
     <script src="script.js"></script>
 </body>
